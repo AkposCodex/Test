@@ -11,10 +11,10 @@
         alt="Xpenspay logo"
         class="object-contain shrink-0 aspect-[4.1] w-[197px]"
       />
-      <div class="flex gap-2.5 items-center text-black">
+      <div class="flex gap-5 items-center text-black">
         <a
           href="#home"
-          class="shrink gap-6 self-stretch text-black font-bold whitespace-nowrap border-b border-black w-[57px]"
+          class="shrink gap-6 self-stretch text-black font-bold border-b border-black w-[57px]"
           tabindex="0"
           >Home</a
         >
