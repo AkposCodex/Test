@@ -3,7 +3,7 @@
     class="flex overflow-hidden mt-4 w-screen max-md:px-5 max-md:max-w-screen items-center"
   >
     <div
-      class="flex md:flex-row flex-col justify-between max-w-full text-lg mx-10 font-medium text-center text-black w-[898px] md:w-full"
+      class="flex md:flex-row flex-col justify-between max-w-full items-center md:text-lg md:mx-10 font-medium text-center text-black w-[898px] md:w-full"
     >
       <img
         loading="lazy"

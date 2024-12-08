@@ -3,7 +3,7 @@
     class="flex flex-wrap gap-10 justify-between items-center text-left mt-28 max-w-full w-[1392px] max-md:mt-10">
     <div class="flex flex-col min-w-[240px] w-[600px] max-md:max-w-full">
       <div class="flex flex-col w-full text-black max-md:max-w-full">
-        <h2 class="text-4xl font-bold max-md:max-w-full">
+        <h2 class="text-3xl font-bold max-md:max-w-full">
           Become an Xpenspay Agent by attending our Agent activation event.
         </h2>
         <p class="mt-3 text-lg font-light max-md:max-w-full">
@@ -31,7 +31,7 @@
           </div>
         </div>
         <button type="submit"
-          class="gap-2.5 self-stretch p-2.5 mt-6 max-w-full font-medium text-white bg-cyan-500 rounded-xl w-[221px]">
+          class="gap-2.5 self-stretch p-2.5 max-w-full font-medium text-white bg-cyan-500 rounded-xl w-[221px]">
           Sign up
         </button>
       </form>

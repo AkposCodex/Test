@@ -8,7 +8,7 @@
           <div
             class="flex flex-col self-stretch my-auto text-5xl font-bold text-black max-md:mt-10 max-md:max-w-full max-md:text-4xl"
           >
-            <h2 class="w-full max-md:max-w-full max-md:text-4xl">
+            <h2 class="w-full max-md:max-w-full max-md:text-3xl">
               Download the Xpenspay app and refer your friends to earn rewards
             </h2>
           </div>

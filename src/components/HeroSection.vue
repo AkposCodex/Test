@@ -17,10 +17,10 @@
         <div
           class="flex flex-col items-start self-stretch my-auto text-center text-black max-md:mt-10 max-md:max-w-full"
         >
-          <h1 class="text-5xl font-bold max-md:max-w-full max-lg:text-4xl">
+          <h1 class="text-5xl font-bold max-md:max-w-full max-lg:text-3xl">
             Discover a new way to pay
           </h1>
-          <p class="mt-6 text-2xl font-medium max-md:max-w-full">
+          <p class="mt-6 text-xl font-medium max-md:max-w-full">
             Stop worrying about small change and start using Xpenspay today
           </p>
         </div>
@@ -33,21 +33,21 @@
             loading="lazy"
             src="https://cdn.builder.io/api/v1/image/assets/c49e2462ddbf40d0944f306255d5e3e6/51c1493f4603db66d58732894835b9b7f1ff9aca7a1bb2479a615eca0bbb5692?apiKey=c49e2462ddbf40d0944f306255d5e3e6&"
             alt="QR code to download app"
-            class="object-contain w-3/5 rounded-lg aspect-square"
+            class="object-contain md:w-3/5 w-2/5 rounded-lg aspect-square"
           />
-          <p class="self-center mt-2.5">Scan to download the app</p>
+          <p class="self-center mt-2.5">Scan to download the app.</p>
         </div>
       </div>
     </div>
   </section>
   <div
-    class="flex flex-col items-center px-16 pt-5 pb-8 w-full text-2xl font-medium text-white bg-cyan-500 max-md:px-5 max-md:max-w-full"
+    class="flex flex-col items-center px-16 pt-5 pb-8 w-full md:text-2xl font-medium text-white bg-cyan-500 max-md:px-5 max-md:max-w-full"
   >
     <div class="flex flex-wrap gap-1 items-end ml-5 max-md:max-w-full">
       <p class="max-md:max-w-full">
-        A Product of Direct Distribution Crafts llc. Powered by
+        A Product of Direct Distribution Crafts. Powered by
       </p>
-      <div class="flex items-end min-w-[240px]">
+      <div class="flex items-center min-w-[240px]">
         <img
           loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets/c49e2462ddbf40d0944f306255d5e3e6/57ebeb0401582b719bc27f3540e484cd3d01630da939e672432cb3e5b8a2df13?apiKey=c49e2462ddbf40d0944f306255d5e3e6&"
