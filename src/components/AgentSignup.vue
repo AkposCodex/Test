@@ -16,17 +16,17 @@
         <div class="flex flex-col w-full font-light text-black max-md:max-w-full">
           <div class="mb-5">
             <label for="name" class="sr-only">Name</label>
-            <input type="text" id="name" placeholder="Name"
+            <input type="text" id="name" name="name"  placeholder="Name"
               class="gap-2.5 self-stretch p-2.5 w-full whitespace-nowrap rounded border border-solid border-zinc-400 max-md:max-w-full" />
           </div>
           <div class="mb-5">
             <label for="phone" class="sr-only">Phone number</label>
-            <input type="tel" id="phone" placeholder="Phone number"
+            <input type="tel" name="phone" id="phone" placeholder="Phone number"
               class="gap-2.5 self-stretch p-2.5 w-full rounded border border-solid border-zinc-400 max-md:max-w-full" />
           </div>
           <div class="mb-5">
             <label for="email" class="sr-only">Email address</label>
-            <input type="email" id="email" placeholder="Email address(optional)"
+            <input type="email" id="email" name="email"  placeholder="Email address(optional)"
               class="gap-2.5 self-stretch p-2.5 w-full rounded border border-solid border-zinc-400 max-md:max-w-full" />
           </div>
         </div>
