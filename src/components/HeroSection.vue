@@ -43,9 +43,9 @@
   <div
     class="flex flex-col items-center px-16 pt-5 pb-8 w-full md:text-2xl font-medium text-white bg-cyan-500 max-md:px-5 max-md:max-w-full"
   >
-    <div class="flex flex-wrap gap-1 items-end ml-5 max-md:max-w-full">
+    <div class="flex flex-wrap gap-3 items-end ml-5 max-md:max-w-full">
       <p class="max-md:max-w-full">
-        A Product of Direct Distribution Crafts. Powered by
+        A Product of Direct Distribution Crafts Limited. Powered by
       </p>
       <div class="flex items-center min-w-[240px]">
         <img

@@ -1,9 +1,9 @@
 <template>
   <footer
     class="flex overflow-hidden flex-col self-stretch mt-28 w-full bg-neutral-100 max-md:px-5 max-md:mt-10 max-md:max-w-full">
-    <div class="flex flex-wrap gap-10 justify-between items-start w-full max-md:max-w-full">
+    <div class="flex flex-wrap gap-10 justify-between items-start self-center  w-full max-md:max-w-full">
       <nav
-        class="flex flex-wrap gap-10 items-start justify-center md:items-start md:text-2xl text-black min-w-[240px] max-md:max-w-full">
+        class="flex flex-wrap gap-10 items-start grow justify-center md:items-start self-center md:text-2xl text-black min-w-[240px]  max-md:max-w-full">
         <div class="flex flex-col w-auto">
           <h3 class="font-bold">Your Account</h3>
           <a href="#support" class="mt-2" tabindex="0">Contact Support</a>
@@ -12,10 +12,10 @@
         </div>
         <div class="flex flex-col w-auto">
           <h3 class="font-bold">Xpenspay</h3>
-          <a href="#about" class="mt-2" tabindex="0">About</a>
-          <a href="#mission" class="mt-2" tabindex="0">Mission and Vision</a>
-          <a href="#compliance" class="mt-2" tabindex="0">Compliance</a>
-          <a href="#partners" class="mt-2" tabindex="0">Our Partners</a>
+          <a href="/about" class="mt-2" tabindex="0">About</a>
+          <a href="/about" class="mt-2" tabindex="0">Mission and Vision</a>
+          <a href="/about" class="mt-2" tabindex="0">Compliance</a>
+          <a href="/about" class="mt-2" tabindex="0">Our Partners</a>
         </div>
         <div class="flex flex-col min-w-[240px] w-auto">
           <h3 class="font-bold">Safety Guidelines</h3>
@@ -24,7 +24,7 @@
           <a href="#faq" class="mt-2" tabindex="0">FAQ</a>
         </div>
       </nav>
-      <div class="flex flex-col min-w-[240px] w-[426px] max-md:max-w-full">
+      <div class="flex flex-col min-w-[240px] w-[426px] grow max-md:max-w-full">
         <p class="text-black max-md:max-w-full text-xl">
           Create an account and start getting the fastest speeds in Nigeria
         </p>

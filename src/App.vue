@@ -4,7 +4,8 @@ import HelloWorld from './components/HelloWorld.vue';
 </script>
 
 <template>
-  <LandingPage msg="Vite + Vue" />
+  <!-- <LandingPage msg="Vite + Vue" /> -->
+  <RouterView />
 </template>
 
 <style scoped>

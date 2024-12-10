@@ -1,5 +1,5 @@
 <template>
-  <section
+  <section id="agent"
     class="flex flex-wrap gap-10 justify-between items-center text-left mt-28 max-w-full w-[1392px] max-md:mt-10">
     <div class="flex flex-col min-w-[240px] w-[600px] max-md:max-w-full">
       <div class="flex flex-col w-full text-black max-md:max-w-full">
@@ -11,12 +11,11 @@
           the event.
         </p>
       </div>
-      <form class="flex flex-col mt-6 max-w-full text-lg w-[690px]" action="https://formspree.io/f/xdkojked"
-        method="POST">
+      <form data-netlify="true" class="flex flex-col mt-6 max-w-full text-lg w-[690px]" method="POST">
         <div class="flex flex-col w-full font-light text-black max-md:max-w-full">
           <div class="mb-5">
             <label for="name" class="sr-only">Name</label>
-            <input type="text" id="name" name="name"  placeholder="Name"
+            <input type="text" id="name" name="name" placeholder="Name"
               class="gap-2.5 self-stretch p-2.5 w-full whitespace-nowrap rounded border border-solid border-zinc-400 max-md:max-w-full" />
           </div>
           <div class="mb-5">
@@ -26,11 +25,11 @@
           </div>
           <div class="mb-5">
             <label for="email" class="sr-only">Email address</label>
-            <input type="email" id="email" name="email"  placeholder="Email address(optional)"
+            <input type="email" id="email" name="email" placeholder="Email address(optional)"
               class="gap-2.5 self-stretch p-2.5 w-full rounded border border-solid border-zinc-400 max-md:max-w-full" />
           </div>
         </div>
-        <button type="submit"
+        <button type="submit" @click="myMethod"
           class="gap-2.5 self-stretch p-2.5 max-w-full font-medium text-white bg-cyan-500 rounded-xl w-[221px]">
           Sign up
         </button>
@@ -44,3 +43,29 @@
     </div>
   </section>
 </template>
+
+<script>
+import { useToast } from "vue-toastification";
+
+export default {
+  setup() {
+    // Get toast interface
+    const toast = useToast();
+
+    // Use it!
+    // toast("I'm a toast!");
+
+    // or with options
+    // toast.success("My toast content", {
+    //   timeout: 2000
+    // });
+    return { toast }
+  },
+
+  methods: {
+    myMethod() {
+      this.toast.info("I'm an info toast!");
+    }
+  }
+}
+</script>

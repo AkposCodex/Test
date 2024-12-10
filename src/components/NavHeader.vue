@@ -18,7 +18,8 @@
           tabindex="0"
           >Home</a
         >
-        <a href="#about" class="self-stretch text-black" tabindex="0">About</a>
+        <!-- <a href="/about" class="self-stretch text-black" tabindex="0">About</a> -->
+        <RouterLink class="self-stretch text-black" to="/about">About</RouterLink>
         <a href="#agent" class="self-stretch text-black" tabindex="0"
           >Become an agent</a
         >
