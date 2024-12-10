@@ -11,7 +11,7 @@
           the event.
         </p>
       </div>
-      <form data-netlify="true" name="AgentSignup" ref="AgentSignup" @submit.prevent="myMethod"
+      <form data-netlify="true" name="AgentSignup" ref="AgentSignup" 
         class="flex flex-col mt-6 max-w-full text-lg w-[690px]" method="POST">
         <input type="hidden" name="form-name" value="AgentSignup" />
         <div class="flex flex-col w-full font-light text-black max-md:max-w-full">
@@ -22,7 +22,7 @@
           </div>
           <div class="mb-5">
             <label for="phone" class="sr-only">Phone number</label>
-            <input type="number" name="phone" id="phone" placeholder="Phone number" required="true"
+            <input type="tel" name="phone" id="phone" placeholder="Phone number" required="true"
               class="gap-2.5 self-stretch p-2.5 w-full rounded border border-solid border-zinc-400 max-md:max-w-full" />
           </div>
           <div class="mb-5">
