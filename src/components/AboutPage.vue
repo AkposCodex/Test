@@ -61,8 +61,8 @@
                     </div>
                 </div>
             </nav>
-            <main>
-                <section class="flex flex-col mt-7 w-full gap-8 text-black max-md:max-w-full">
+            <main class="flex gap-8 flex-col">
+                <section class="flex flex-col mt-7 w-full gap-10 text-black max-md:max-w-full">
                     <div class="flex overflow-hidden flex-col px-16 w-full max-md:px-5 max-md:max-w-full">
                         <h2 class="self-center text-4xl font-bold text-center">About Xpenspay</h2>
                         <p class="mt-4 text-2xl font-medium max-md:max-w-full">
@@ -74,7 +74,7 @@
                         <h2 class="self-center text-4xl font-bold text-center">Our Vision</h2>
                         <p class="mt-4 text-2xl font-medium max-md:max-w-full">
                             To simplify the payments scene for the businesses of all sizes, from Aunty's Kiosk to bus
-                            drivers all over hte country.
+                            drivers all over the country.
                         </p>
                     </div>
                 </section>
