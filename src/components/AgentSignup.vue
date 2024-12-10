@@ -11,8 +11,8 @@
           the event.
         </p>
       </div>
-      <form  name="AgentSignup" ref="AgentSignup" 
-        class="flex flex-col mt-6 max-w-full text-lg w-[690px]" method="POST">
+      <form name="AgentSignup" ref="AgentSignup" netlify data-netlify="true" data-netlify-honeypot="bot-field"
+        class="flex flex-col mt-6 max-w-full text-lg w-[690px]" action="POST">
         <input type="hidden" name="form-name" value="AgentSignup" />
         <div class="flex flex-col w-full font-light text-black max-md:max-w-full">
           <div class="mb-5">
@@ -31,7 +31,7 @@
               class="gap-2.5 self-stretch p-2.5 w-full rounded border border-solid border-zinc-400 max-md:max-w-full" />
           </div>
         </div>
-        <input type="submit" 
+        <input type="submit"
           class="gap-2.5 self-stretch p-2.5 max-w-full font-medium text-white bg-cyan-500 rounded-xl w-[221px]" />
       </form>
     </div>
