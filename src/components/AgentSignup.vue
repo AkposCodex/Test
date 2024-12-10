@@ -11,7 +11,7 @@
           the event.
         </p>
       </div>
-      <form data-netlify="true" name="AgentSignup" ref="AgentSignup" 
+      <form data-netlify="true" name="AgentSignup" ref="AgentSignup" netlify
         class="flex flex-col mt-6 max-w-full text-lg w-[690px]" method="POST">
         <input type="hidden" name="form-name" value="AgentSignup" />
         <div class="flex flex-col w-full font-light text-black max-md:max-w-full">
