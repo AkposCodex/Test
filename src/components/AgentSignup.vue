@@ -11,16 +11,18 @@
           the event.
         </p>
       </div>
-      <form data-netlify="true" class="flex flex-col mt-6 max-w-full text-lg w-[690px]" method="POST">
+      <form data-netlify="true" name="AgentSignup" ref="AgentSignup" @submit.prevent="myMethod"
+        class="flex flex-col mt-6 max-w-full text-lg w-[690px]" method="POST">
+        <input type="hidden" name="form-name" value="AgentSignup" />
         <div class="flex flex-col w-full font-light text-black max-md:max-w-full">
           <div class="mb-5">
             <label for="name" class="sr-only">Name</label>
-            <input type="text" id="name" name="name" placeholder="Name"
+            <input type="text" id="name" name="name" placeholder="Name" required="true"
               class="gap-2.5 self-stretch p-2.5 w-full whitespace-nowrap rounded border border-solid border-zinc-400 max-md:max-w-full" />
           </div>
           <div class="mb-5">
             <label for="phone" class="sr-only">Phone number</label>
-            <input type="tel" name="phone" id="phone" placeholder="Phone number"
+            <input type="number" name="phone" id="phone" placeholder="Phone number" required="true"
               class="gap-2.5 self-stretch p-2.5 w-full rounded border border-solid border-zinc-400 max-md:max-w-full" />
           </div>
           <div class="mb-5">
@@ -29,7 +31,7 @@
               class="gap-2.5 self-stretch p-2.5 w-full rounded border border-solid border-zinc-400 max-md:max-w-full" />
           </div>
         </div>
-        <button type="submit" @click="myMethod"
+        <button type="submit"
           class="gap-2.5 self-stretch p-2.5 max-w-full font-medium text-white bg-cyan-500 rounded-xl w-[221px]">
           Sign up
         </button>
@@ -64,7 +66,8 @@ export default {
 
   methods: {
     myMethod() {
-      this.toast.info("I'm an info toast!");
+      this.toast.success("Form submitted");
+      this.$refs.AgentSignup.reset();
     }
   }
 }
