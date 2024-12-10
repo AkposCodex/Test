@@ -31,10 +31,8 @@
               class="gap-2.5 self-stretch p-2.5 w-full rounded border border-solid border-zinc-400 max-md:max-w-full" />
           </div>
         </div>
-        <button type="submit"
-          class="gap-2.5 self-stretch p-2.5 max-w-full font-medium text-white bg-cyan-500 rounded-xl w-[221px]">
-          Sign up
-        </button>
+        <input type="submit" 
+          class="gap-2.5 self-stretch p-2.5 max-w-full font-medium text-white bg-cyan-500 rounded-xl w-[221px]" />
       </form>
     </div>
     <div
