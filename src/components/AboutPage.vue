@@ -26,18 +26,18 @@
                                 <img loading="lazy"
                                     src="https://cdn.builder.io/api/v1/image/assets/c49e2462ddbf40d0944f306255d5e3e6/224d92da842c32e0283ecf310753e692290935c90e979d29d28cd2d4d3499bc1?apiKey=c49e2462ddbf40d0944f306255d5e3e6&"
                                     alt="About Xpenspay illustration"
-                                    class="object-contain grow w-full aspect-[0.87] max-md:mt-10 max-md:max-w-full" />
+                                    class="object-contain grow w-3/5 aspect-[0.87] max-md:mt-10 max-md:max-w-full" />
                             </div>
                             <div class="flex flex-col ml-5 w-[63%] max-md:ml-0 max-md:w-full">
                                 <div class="flex flex-col self-stretch my-auto max-md:mt-10 max-md:max-w-full">
-                                    <div class="flex flex-col justify-center p-2.5 w-full max-md:max-w-full">
+                                    <div class="flex flex-col justify-start p-2.5 w-full max-md:max-w-full">
                                         <img loading="lazy"
                                             src="https://cdn.builder.io/api/v1/image/assets/c49e2462ddbf40d0944f306255d5e3e6/c6b82d344905ff08745e24e29e8b656fb33ba20a2da6fcb9e5f8d712445ad9fc?apiKey=c49e2462ddbf40d0944f306255d5e3e6&"
                                             alt="Xpenspay banner"
-                                            class="object-contain w-full aspect-[4.1] max-md:max-w-full" />
+                                            class="object-contain w-3/5 aspect-[4.1] max-md:max-w-full" />
                                     </div>
                                     <h1
-                                        class="text-5xl font-bold text-center text-black max-md:max-w-full max-md:text-4xl">
+                                        class="text-3xl font-bold text-start text-black max-md:max-w-full max-md:text-4xl">
                                         Get To Know xpenspay
                                     </h1>
                                 </div>
