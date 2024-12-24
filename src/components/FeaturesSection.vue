@@ -5,7 +5,7 @@
         <h2 class="text-5xl font-bold max-md:max-w-full max-md:text-3xl">Easily find merchants around you
           on the
           xpenspay platform</h2>
-        <p class="mt-5 text-xl font-medium max-md:max-w-full">Get the fastest possible service wherever you go,
+        <p class="mt-5 text-xl font-medium max-md:max-w-full">Get the fastest service wherever you go,
           hassle-free</p>
       </div>
       <div class="flex overflow-hidden flex-col self-stretch px-1 my-auto min-w-[240px] w-[390px]">

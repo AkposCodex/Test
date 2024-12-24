@@ -7,7 +7,7 @@
         alt="Xpenspay logo" class="object-contain shrink-0 aspect-[4.1] w-[197px]" />
       <div class="flex gap-5 items-center text-black">
         <RouterLink class="self-stretch text-black font-bold border-b border-black w-[57px]" to="/">Home</RouterLink>
-        <RouterLink class="self-stretch text-black" to="/about">About</RouterLink>
+        <RouterLink class="self-stretch text-black" to="/about2">About</RouterLink>
         <a href="#agent" class="self-stretch text-black" tabindex="0">Become an agent</a>
       </div>
     </div>
