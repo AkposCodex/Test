@@ -1,4 +1,5 @@
 <script>
+import SiteFooter from './SiteFooter.vue';
 import { ref } from 'vue';
 import { CAccordion } from '@coreui/vue'
 export default {
@@ -7,6 +8,9 @@ export default {
         return {
             open
         };
+    },
+    components: {
+        SiteFooter,
     },
     methods: {
         openNav() {
@@ -17,22 +21,28 @@ export default {
 </script>
 <template>
     <div class="w-screen">
-        <nav class="flex flex-col shadow-sm">
+        <nav class="flex w-screen lg:max-[1440px]:px-[60px] flex-col lg:items-center shadow-sm lg:flex-row">
             <nav class="w-full h-[60px] flex px-[16px] items-center justify-between">
-                <div class="justify-center flex-1 flex">
+                <div class="justify-center w-full lg:w-auto flex lg:flex-0">
                     <img loading="lazy"
                         src="https://cdn.builder.io/api/v1/image/assets/c49e2462ddbf40d0944f306255d5e3e6/6a21e9e92c25a36bb6144942c9b9e60e3351226a0fdb4687a4f2b830305470d8?apiKey=c49e2462ddbf40d0944f306255d5e3e6&"
                         alt="Xpenspay logo" class="object-contain shrink-0 aspect-[4.1] w-[150px]" />
                 </div>
-                <a class="justify-end flex lg:hidden" @click="open = !open; console.log(open)"> <img
-                        src="../assets/icons/Menu.svg" class="aspect-square w-[32px]" alt="">
+                <a class="justify-end flex lg:hidden" @click="open = !open;"> <img src="../assets/icons/Menu.svg"
+                        class="aspect-square w-[32px]" alt="">
                 </a>
             </nav>
             <div class="flex gap-4 flex-col items-start text-black p-4" :class="{ 'hidden': !open, 'lg:block': open }">
-                <RouterLink class=" text-black font-bold border-b border-black " to="/">Home
+                <RouterLink class=" text-black" to="/">Home
                 </RouterLink>
                 <RouterLink class=" text-black" to="/about2">About</RouterLink>
                 <a href="#agent" class=" text-black" tabindex="0">Become an agent</a>
+            </div>
+            <div class="lg:flex gap-4 items-start w-auto text-black hidden ">
+                <RouterLink class=" text-black" to="/">Home
+                </RouterLink>
+                <RouterLink class=" text-black w-max" to="/about2">About</RouterLink>
+                <a href="#agent" class=" w-max text-black" tabindex="0">Become an agent</a>
             </div>
         </nav>
         <main class="flex flex-col items-center">
@@ -163,10 +173,11 @@ export default {
                         </AccordionPanel>
                     </Accordion>
                 </div>
-                <div class="bg-[#EEEEEE] rounded-xl py-[60px] justify-between items-center text-start flex xl:gap-32 gap-16 px-[8px] md:px-[50px]">
+                <div
+                    class="bg-[#EEEEEE] rounded-xl py-[60px] justify-between items-center text-start flex xl:gap-32 gap-16 px-[8px] md:px-[50px]">
                     <div class="flex flex-1 flex-col gap-8 w-full">
                         <p class="text-xl text-[#5A5A5A] font-bold">Become An Xpenspay Agent Today</p>
-                        <form action="" class="flex flex-col gap-4 font-bold">
+                        <form action="https://formspree.io/f/xdkojked" class="flex flex-col gap-4 font-bold">
                             <div class="flex gap-2 flex-col">
                                 <label for="fullName" class="">Full Name</label>
                                 <input type="text" class="p-3 rounded" name="fullName">
@@ -197,5 +208,6 @@ export default {
                 </div>
             </div>
         </main>
+        <site-footer class="p-4 " />
     </div>
 </template>

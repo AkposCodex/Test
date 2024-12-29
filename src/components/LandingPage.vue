@@ -5,7 +5,7 @@
       <hero-section class="p-4" />
       <features-section class="p-4" />
       <download-section class="p-4" />
-      <agent-signup class="p-4" />
+      <agent-signup  />
     </main>
     <site-footer class="p-4" />
   </div>

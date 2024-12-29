@@ -1,5 +1,5 @@
 <template>
-  <section id="agent"
+  <!-- <section id="agent"
     class="flex flex-wrap gap-10 justify-between items-center text-left mt-28 max-w-full w-[1392px] max-md:mt-10">
     <div class="flex flex-col min-w-[240px] w-[600px] max-md:max-w-full">
       <div class="flex flex-col w-full text-black max-md:max-w-full">
@@ -41,8 +41,32 @@
         src="https://cdn.builder.io/api/v1/image/assets/c49e2462ddbf40d0944f306255d5e3e6/e82c2ebe0c20608c16409085e0280e5de4ead642dba5a1d581c314aef32f9b6c?apiKey=c49e2462ddbf40d0944f306255d5e3e6&"
         alt="Agent activation event illustration" class="object-contain w-full aspect-[0.7]" />
     </div>
-  </section>
+  </section> -->
 
+  <div
+    class="bg-[#EEEEEE] mt-20 py-[60px] justify-between items-center text-start flex xl:gap-32 gap-16 px-[8px] md:px-[50px]">
+    <div class="flex flex-1 flex-col gap-8 w-full">
+      <p class="text-xl text-[#5A5A5A] font-bold">Become An Xpenspay Agent Today</p>
+      <form action="https://formspree.io/f/xdkojked" class="flex flex-col gap-4 font-bold">
+        <div class="flex gap-2 flex-col">
+          <label for="fullName" class="">Full Name</label>
+          <input type="text" class="p-3 rounded" name="fullName">
+        </div>
+        <div class="flex gap-2 flex-col">
+          <label for="phoneNumber" class="">Phone Number</label>
+          <input type="text" class="p-3 rounded" name="phoneNumber">
+        </div>
+        <div class="flex gap-2 flex-col">
+          <label for="emailAddress" class="">Email Address</label>
+          <input type="text" class="p-3 rounded" name="emailAddress">
+        </div>
+        <button class="md:w-max w-full px-10 py-2 bg-black font-bold text-white">Submit</button>
+      </form>
+    </div>
+    <div class="md:flex-1 hidden md:block">
+      <img src="../assets/illustrations/signupIllust.svg" alt="" class="">
+    </div>
+  </div>
 </template>
 
 <script>
