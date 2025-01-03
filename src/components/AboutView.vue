@@ -56,7 +56,7 @@ export default {
                 <div class="flex gap-3 flex-col md:flex-row md:gap-5">
                     <div class="self-stretch">
                         <p class="text-xl md:text-2xl text-start font-bold">Putting our users and merchants first</p>
-                        <p class="text-start md:text-xl">At Xpenspay we put our customers first in ever feature we
+                        <p class="text-start md:text-xl">At Xpenspay we put our customers first in every feature we
                             design and implement
                             into our application to provide the greatest value possible with every transaction.
                             <br> Our transaction fees are one of the lowest in the country allowing for a larger range
@@ -73,9 +73,8 @@ export default {
                     <div class="self-stretch">
                         <p class="text-xl text-start font-bold">A fast and convenient way to pay</p>
                         <p class="text-start">Xpenspay incorporates QR code technology as well as direct in-app
-                            transfers to
-                            provide flexibility and speed when carrying out transactions to provide one of the fastest
-                            transaction speeds in the country.
+                            transfers to provide flexibility and speed when carrying out transactions to provide one of
+                            the fastest transaction speeds in the industry
                         </p>
                     </div>
                     <div class="w-full md:max-w-[334px] h-[235px] bg-cover bg-center rounded-2xl"
@@ -85,15 +84,13 @@ export default {
                 <div class="flex gap-3 flex-col md:flex-row md:gap-5">
                     <div class="self-stretch">
                         <p class="text-xl text-start font-bold">An innovative community focused design</p>
-                        <p class="text-start">With Xpenspay our focus on the people who use our app lead in implementing
-                            a
-                            feature to allow users to discover vendors on the platform that operate in their are and
-                            give a
-                            quick overview of their business and what they offer. This fosters a sense of closeness
-                            within
-                            the community where you don’t forsake your neighbour selling their products close to you and
-                            saves you time in going far to find it. The map feature also allows our users to explore new
-                            areas for the best spots for food and goods whenever they go about their day.
+                        <p class="text-start">With Xpenspay, our focus on the people who use our app leads. The app has
+                            a feature that allows users to discover vendors on the platform that operate in their area
+                            and give a quick overview of their businesses and what they offer. This fosters a sense of
+                            closeness within the community where you don't forsake your neighbour selling
+                            products/services close to you and saves you time in going far to find it. The map feature
+                            also allows our users to explore new areas for the best spots for food and goods/services as
+                            they go about their day.
                         </p>
                     </div>
                     <div class="w-full  bg-cover bg-center rounded-2xl">
@@ -123,7 +120,13 @@ export default {
                             <AccordionHeader class="text-start">How does Xpenspay work?</AccordionHeader>
                             <AccordionContent>
                                 <p class="m-0">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    The xpenspay app is designed to help you pay for daily expenses without worrying
+                                    about physical cash. With your phone camera scan the QR code at the merchant
+                                    location, enter the product/service amount and enter your pin to pay.
+                                    <br>
+                                    All you need is download the Xpenspay App and link it with your existing bank
+                                    account to fund your Xpenspay wallet.Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
                                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
                                     nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                                     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
@@ -136,12 +139,9 @@ export default {
                             <AccordionHeader>How do I become an Agent of Xpenspay?</AccordionHeader>
                             <AccordionContent>
                                 <p class="m-0">
-                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                                    doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-                                    veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
-                                    ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                                    consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                                    Consectetur, adipisci velit, sed quia non numquam eius modi.
+                                    Submit your details on the Xpenspay website to register as an Agent and you will be
+                                    contacted by any of our On-boarding Officers for training to complete your
+                                    registration process.
                                 </p>
                             </AccordionContent>
                         </AccordionPanel>
@@ -149,12 +149,11 @@ export default {
                             <AccordionHeader>What happens to my money in my account?</AccordionHeader>
                             <AccordionContent>
                                 <p class="m-0">
-                                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                                    praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias
-                                    excepturi sint occaecati cupiditate non provident, similique sunt in culpa
-                                    qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum
-                                    quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta
-                                    nobis est eligendi optio cumque nihil impedit quo minus.
+                                    Once you have funded your Xpenspay wallet, you can pay for items and services in any
+                                    of our merchant locations. Your unused money is safe in your wallet. But we
+                                    recommend that you move your unused money back to your linked regular bank account
+                                    at the end of the day as your Xpenspay wallet is not a savings account and does not
+                                    earn interest on stored amounts.
                                 </p>
                             </AccordionContent>
                         </AccordionPanel>
@@ -162,12 +161,9 @@ export default {
                             <AccordionHeader>How do I change my phone number on my account?</AccordionHeader>
                             <AccordionContent>
                                 <p class="m-0">
-                                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                                    praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias
-                                    excepturi sint occaecati cupiditate non provident, similique sunt in culpa
-                                    qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum
-                                    quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta
-                                    nobis est eligendi optio cumque nihil impedit quo minus.
+                                    Your phone number used at registration can not be changed after your account is
+                                    created. If for wahtever reason you have need to change your number contact us at
+                                    <a href="mailto:info@xpenspayng.com">info@xpenspayng.com.</a>
                                 </p>
                             </AccordionContent>
                         </AccordionPanel>
