@@ -93,9 +93,9 @@ export default {
                             they go about their day.
                         </p>
                     </div>
-                    <div class="w-full  bg-cover bg-center rounded-2xl">
+                    <div class="w-full  bg-cover bg-center h-[300px] rounded-2xl">
                         <img src="https://cdn.builder.io/api/v1/image/assets/c49e2462ddbf40d0944f306255d5e3e6/e04dcbff994243f2fb8f37b5e9b54e0105dc1832d935c7158849e8fe76c1e82b?apiKey=c49e2462ddbf40d0944f306255d5e3e6&"
-                            alt="" class="">
+                            alt="" class="h-full m-auto">
                     </div>
                 </div>
                 <div class="flex gap-3 flex-col md:flex-row-reverse md:gap-5">
@@ -105,9 +105,8 @@ export default {
                             from merchants on the platform. Discounts vary from merchant to merchant.
                         </p>
                     </div>
-                    <div class="w-full  bg-cover bg-center rounded-2xl">
-                        <img src="https://images.unsplash.com/photo-1531303435785-3853ba035cda?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                            alt="" class="">
+                    <div class="w-full md:max-w-[334px] h-[235px] bg-cover bg-center rounded-2xl"
+                        style="background-image: url('https://images.unsplash.com/photo-1531303435785-3853ba035cda?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
                     </div>
                 </div>
                 <div class="flex gap-6 flex-col">
