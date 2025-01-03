@@ -98,6 +98,18 @@ export default {
                             alt="" class="">
                     </div>
                 </div>
+                <div class="flex gap-3 flex-col md:flex-row-reverse md:gap-5">
+                    <div class="self-stretch">
+                        <p class="text-xl text-start font-bold">Make savings on your purchases and payments</p>
+                        <p class="text-start">On the Xpenspay App, users can earn discounts on products and services
+                            from merchants on the platform. Discounts vary from merchant to merchant.
+                        </p>
+                    </div>
+                    <div class="w-full  bg-cover bg-center rounded-2xl">
+                        <img src="https://images.unsplash.com/photo-1531303435785-3853ba035cda?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="" class="">
+                    </div>
+                </div>
                 <div class="flex gap-6 flex-col">
                     <p class="text-xl text-center font-bold">Our Partners</p>
                     <p class="text-start">Xpenspay is built in collaboration with Simplex Business Solutions and
@@ -158,6 +170,17 @@ export default {
                                     Your phone number used at registration can not be changed after your account is
                                     created. If for wahtever reason you have need to change your number contact us at
                                     <a href="mailto:info@xpenspayng.com">info@xpenspayng.com.</a>
+                                </p>
+                            </AccordionContent>
+                        </AccordionPanel>
+                        <AccordionPanel value="4">
+                            <AccordionHeader>How do I fund my Xpenspay wallet?</AccordionHeader>
+                            <AccordionContent>
+                                <p class="m-0">
+                                    Your Xpenspay wallet has a linked account provided by VFD Microfinance Bank that can
+                                    be funded using your
+                                    bank account of choice. Simply click on "Fund Wallet" in your Xpenspay app and copy
+                                    your account details provided.
                                 </p>
                             </AccordionContent>
                         </AccordionPanel>
