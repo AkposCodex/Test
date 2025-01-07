@@ -4,11 +4,11 @@
   >
     <div class="overflow-hidden w-full max-md:max-w-full">
       <div class="flex gap-5 max-md:flex-col">
-        <div class="flex flex-col gap-6 w-3/5 max-md:ml-0 items-center max-md:w-full">
+        <div class="flex flex-col gap-6 w-3/5 max-md:ml-0 justify-center items-center max-md:w-full">
           <div
-            class="flex flex-col self-stretch my-auto text-5xl font-bold text-black max-md:mt-10 max-md:max-w-full max-md:text-4xl"
+            class="flex flex-col self-stretch text-4xl font-bold text-black max-md:mt-10 max-md:max-w-full max-md:text-4xl"
           >
-            <h2 class="w-full max-md:max-w-full max-md:text-3xl">
+            <h2 class="w-full max-md:max-w-full max-md:text-2xl">
               Download the Xpenspay app and refer your friends to earn rewards
             </h2>
           </div>

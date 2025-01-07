@@ -21,7 +21,7 @@ export default {
 </script>
 <template>
     <div class="w-screen">
-        <nav class="flex w-screen lg:max-[1440px]:px-[60px] flex-col lg:items-center shadow-sm lg:flex-row">
+        <nav class="flex w-screen lg:max-[1440px]:px-[40px] flex-col lg:items-center shadow-sm lg:flex-row">
             <nav class="w-full h-[60px] flex px-[16px] items-center justify-between">
                 <div class="justify-center w-full lg:w-auto flex lg:flex-0">
                     <img loading="lazy"
@@ -52,14 +52,14 @@ export default {
                     <p class="text-[32px] font-bold text-white">About Xpenspay</p>
                 </div>
             </div>
-            <div class="px-[16px] lg:max-[1440px]:px-[60px] flex flex-col gap-10 my-10 " id="mainContent">
+            <div class="px-[16px] lg:max-[1440px]:px-[40px] flex flex-col gap-10 my-10 " id="mainContent">
                 <div class="flex gap-3 flex-col md:flex-row md:gap-5">
                     <div class="self-stretch">
                         <p class="text-xl md:text-2xl text-start font-bold">Putting our users and merchants first</p>
                         <p class="text-start md:text-xl">At Xpenspay we put our customers first in every feature we
                             design and implement
                             into our application to provide the greatest value possible with every transaction.
-                            <br> Our transaction fees are one of the lowest in the country allowing for a larger range
+                            <br> Our transaction fees are one of the lowest in the industry allowing for a larger range
                             of
                             transactions to be carried out by customers with merchants providing low volume transactions
                             like car hire services and Mama Bole selling her quick eats on the street.

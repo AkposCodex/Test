@@ -30,7 +30,7 @@ export default {
       </div>
     </div>
   </nav> -->
-  <nav class="flex w-screen lg:max-[1440px]:px-[60px] flex-col lg:items-center shadow-sm lg:flex-row">
+  <nav class="flex w-screen lg:max-[1440px]:px-[40px] mb-2 flex-col lg:items-center shadow-sm lg:flex-row">
     <nav class="w-full h-[60px] flex px-[16px] items-center justify-between">
       <div class="justify-center w-full lg:w-auto flex lg:flex-0">
         <img loading="lazy"

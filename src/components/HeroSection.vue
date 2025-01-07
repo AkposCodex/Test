@@ -1,6 +1,6 @@
 <template>
   <section
-    class="self-endmt-20 w-full max-w-full max-md:mt-10 max-md:max-w-full p-4"
+    class="self-endmt-20 w-full max-w-full max-md:mt-10 max-md:max-w-full px-4"
   >
     <div class="flex gap-5 max-md:flex-col">
       <div
@@ -41,7 +41,7 @@
     </div>
   </section>
   <div
-    class="flex flex-col items-center px-16 pt-5 pb-8 w-full md:text-2xl font-medium text-white bg-cyan-500 max-md:px-5 max-md:max-w-full"
+    class="flex flex-col items-center px-8 py-5 w-full md:text-2xl font-medium text-white bg-cyan-500 max-md:px-5 max-md:max-w-full"
   >
     <div class="flex flex-wrap gap-3 items-end ml-5 max-md:max-w-full">
       <p class="max-md:max-w-full">

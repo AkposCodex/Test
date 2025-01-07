@@ -1,34 +1,33 @@
 <template>
   <footer
-    class="flex overflow-hidden flex-col self-stretch mt-28 w-full bg-neutral-100 max-md:px-5 max-md:mt-10 max-md:max-w-full">
-    <div class="flex flex-wrap gap-10 justify-between items-start self-center  w-full max-md:max-w-full">
-      <nav
-        class="flex flex-wrap gap-10 items-start grow justify-center md:items-start self-center md:text-2xl text-black min-w-[240px]  max-md:max-w-full">
-        <div class="flex flex-col w-auto">
+    class="flex overflow-hidden flex-col self-stretch mt-28 w-full bg-neutral-100 lg:max-[1440px]:px-[40px] px-[16px] py-[30px] max-md:mt-10 max-md:max-w-full">
+    <div class="flex flex-wrap gap-10 lg:justify-between justify-center items-start self-center  w-full max-md:max-w-full">
+      <nav class="flex flex-wrap gap-10 items-start grow text-black min-w-[240px]  max-md:max-w-full">
+        <div class="flex flex-col items-start w-auto">
           <h3 class="font-bold">Your Account</h3>
           <a href="#support" class="mt-2" tabindex="0">Contact Support</a>
-          <a href="#agent" class="mt-2" tabindex="0">Become an Agent</a>
-          <a href="#help" class="mt-2" tabindex="0">Help</a>
+          <a href="#agent" class="mt-2" tabindex="1">Become an Agent</a>
+          <a href="#help" class="mt-2" tabindex="2">Help</a>
         </div>
-        <div class="flex flex-col w-auto">
+        <div class="flex flex-col items-start w-auto">
           <h3 class="font-bold">Xpenspay</h3>
           <a href="/about" class="mt-2" tabindex="0">About</a>
-          <a href="/about" class="mt-2" tabindex="0">Mission and Vision</a>
-          <a href="/about" class="mt-2" tabindex="0">Compliance</a>
-          <a href="/about" class="mt-2" tabindex="0">Our Partners</a>
+          <a href="/about" class="mt-2" tabindex="1">Mission and Vision</a>
+          <a href="/about" class="mt-2" tabindex="2">Compliance</a>
+          <a href="/about" class="mt-2" tabindex="3">Our Partners</a>
         </div>
-        <div class="flex flex-col min-w-[240px] w-auto">
+        <div class="flex flex-col items-start min-w-[240px] w-auto">
           <h3 class="font-bold">Safety Guidelines</h3>
           <a href="#protect" class="mt-2" tabindex="0">Protecting your account</a>
-          <a href="#money" class="mt-2" tabindex="0">What happens to my money?</a>
-          <a href="#faq" class="mt-2" tabindex="0">FAQ</a>
+          <a href="#money" class="mt-2" tabindex="1">What happens to my money?</a>
+          <a href="#faq" class="mt-2" tabindex="2">FAQ</a>
         </div>
       </nav>
-      <div class="flex flex-col min-w-[240px] w-[426px] grow max-md:max-w-full">
-        <p class="text-black max-md:max-w-full text-xl">
+      <div class="flex flex-col items-start justify-start min-w-[240px] w-[426px] lg:max-[1440px]:w-auto">
+        <p class="text-black text-xl">
           Create an account and start getting the fastest speeds in Nigeria
         </p>
-        <div class="flex gap-3.5 self-center mt-3.5 max-w-full w-[324px]">
+        <div class="flex gap-3.5 md:self-center mt-3.5 max-w-full">
           <img loading="lazy"
             src="https://cdn.builder.io/api/v1/image/assets/c49e2462ddbf40d0944f306255d5e3e6/fdd90d0ec841f5a45148c0f3014e3ee3dcaf912a04da03cb6702ad9efacfee8e?apiKey=c49e2462ddbf40d0944f306255d5e3e6&"
             alt="App Store download button"
@@ -43,14 +42,14 @@
       <nav class="flex flex-wrap gap-8 w-full justify-center md:justify-start max-md:max-w-full">
         <span class="font-bold">© 2024 Xpenspay</span>
         <a href="#cookie-policy" tabindex="0">Cookie Policy</a>
-        <a href="#terms" tabindex="0">Terms & Conditions</a>
-        <a href="#privacy" tabindex="0">Privacy Policy</a>
-        <a href="#privacy" tabindex="0">Cookie Settings</a>
+        <a href="#terms" tabindex="1">Terms & Conditions</a>
+        <a href="#privacy" tabindex="2">Privacy Policy</a>
+        <a href="#privacy" tabindex="3">Cookie Settings</a>
       </nav>
       <img loading="lazy"
         src="https://cdn.builder.io/api/v1/image/assets/c49e2462ddbf40d0944f306255d5e3e6/0affe808b6f7862ba411c28976a3e9ca595e55f5b86932fd1d32bdda5d2df5c4?apiKey=c49e2462ddbf40d0944f306255d5e3e6&"
         alt="Payment partners and security certifications"
-        class="object-contain mt-7 max-w-full aspect-[4.1] w-[250px]" />
+        class="object-contain hidden mt-7 max-w-full aspect-[4.1] w-[250px]" />
     </div>
   </footer>
 </template>

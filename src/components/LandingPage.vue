@@ -1,13 +1,13 @@
 <template>
   <div class="flex overflow-hidden flex-col bg-white w-screen">
     <nav-header />
-    <main class="flex gap-2 flex-col">
+    <main class="flex flex-col">
       <hero-section class="p-4" />
       <features-section class="p-4" />
       <download-section class="p-4" />
       <agent-signup  />
     </main>
-    <site-footer class="p-4" />
+    <site-footer class="" />
   </div>
 </template>
 
