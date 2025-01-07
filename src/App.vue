@@ -1,10 +1,8 @@
 <script setup>
-import LandingPage from './components/LandingPage.vue';
-import HelloWorld from './components/HelloWorld.vue';
+import { RouterLink, RouterView } from "vue-router";
 </script>
 
 <template>
-  <!-- <LandingPage msg="Vite + Vue" /> -->
   <RouterView />
 </template>
 

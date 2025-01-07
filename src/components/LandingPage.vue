@@ -2,10 +2,10 @@
   <div class="flex overflow-hidden flex-col bg-white w-screen">
     <nav-header />
     <main class="flex flex-col">
-      <hero-section class="p-4" />
-      <features-section class="p-4" />
-      <download-section class="p-4" />
-      <agent-signup  />
+      <hero-section />
+      <features-section />
+      <download-section />
+      <agent-signup />
     </main>
     <site-footer class="" />
   </div>

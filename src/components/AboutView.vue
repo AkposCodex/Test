@@ -1,5 +1,7 @@
 <script>
 import SiteFooter from './SiteFooter.vue';
+import AgentSignup from './AgentSignup.vue';
+import NavHeader from './NavHeader.vue';
 import { ref } from 'vue';
 import { CAccordion } from '@coreui/vue'
 export default {
@@ -11,6 +13,8 @@ export default {
     },
     components: {
         SiteFooter,
+        AgentSignup,
+        NavHeader,
     },
     methods: {
         openNav() {
@@ -21,30 +25,7 @@ export default {
 </script>
 <template>
     <div class="w-screen">
-        <nav class="flex w-screen lg:max-[1440px]:px-[40px] flex-col lg:items-center shadow-sm lg:flex-row">
-            <nav class="w-full h-[60px] flex px-[16px] items-center justify-between">
-                <div class="justify-center w-full lg:w-auto flex lg:flex-0">
-                    <img loading="lazy"
-                        src="https://cdn.builder.io/api/v1/image/assets/c49e2462ddbf40d0944f306255d5e3e6/6a21e9e92c25a36bb6144942c9b9e60e3351226a0fdb4687a4f2b830305470d8?apiKey=c49e2462ddbf40d0944f306255d5e3e6&"
-                        alt="Xpenspay logo" class="object-contain shrink-0 aspect-[4.1] w-[150px]" />
-                </div>
-                <a class="justify-end flex lg:hidden" @click="open = !open;"> <img src="../assets/icons/Menu.svg"
-                        class="aspect-square w-[32px]" alt="">
-                </a>
-            </nav>
-            <div class="flex gap-4 flex-col items-start text-black p-4" :class="{ 'hidden': !open, 'lg:block': open }">
-                <RouterLink class=" text-black" to="/">Home
-                </RouterLink>
-                <RouterLink class=" text-black" to="/about2">About</RouterLink>
-                <a href="#agent" class=" text-black" tabindex="0">Become an agent</a>
-            </div>
-            <div class="lg:flex gap-4 items-start w-auto text-black hidden ">
-                <RouterLink class=" text-black" to="/">Home
-                </RouterLink>
-                <RouterLink class=" text-black w-max" to="/about2">About</RouterLink>
-                <a href="#agent" class=" w-max text-black" tabindex="0">Become an agent</a>
-            </div>
-        </nav>
+        <nav-header />
         <main class="flex flex-col items-center">
             <div class="w-full h-[200px] bg-cover bg-center "
                 style="background-image: url('https://images.unsplash.com/photo-1607269910784-aafe40882991?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
@@ -56,7 +37,7 @@ export default {
                 <div class="flex gap-3 flex-col md:flex-row md:gap-5">
                     <div class="self-stretch">
                         <p class="text-xl md:text-2xl text-start font-bold">Putting our users and merchants first</p>
-                        <p class="text-start md:text-xl">At Xpenspay we put our customers first in every feature we
+                        <p class="text-start md:text-lg">At Xpenspay we put our customers first in every feature we
                             design and implement
                             into our application to provide the greatest value possible with every transaction.
                             <br> Our transaction fees are one of the lowest in the industry allowing for a larger range
@@ -72,7 +53,8 @@ export default {
                 <div class="flex gap-3 flex-col md:flex-row-reverse md:gap-5">
                     <div class="self-stretch">
                         <p class="text-xl text-start font-bold">A fast and convenient way to pay</p>
-                        <p class="text-start">Xpenspay incorporates QR code technology as well as direct in-app
+                        <p class="text-start md:text-lg">Xpenspay incorporates QR code technology as well as direct
+                            in-app
                             transfers to provide flexibility and speed when carrying out transactions to provide one of
                             the fastest transaction speeds in the industry
                         </p>
@@ -84,7 +66,8 @@ export default {
                 <div class="flex gap-3 flex-col md:flex-row md:gap-5">
                     <div class="self-stretch">
                         <p class="text-xl text-start font-bold">An innovative community focused design</p>
-                        <p class="text-start">With Xpenspay, our focus on the people who use our app leads. The app has
+                        <p class="text-start md:text-lg">With Xpenspay, our focus on the people who use our app leads.
+                            The app has
                             a feature that allows users to discover vendors on the platform that operate in their area
                             and give a quick overview of their businesses and what they offer. This fosters a sense of
                             closeness within the community where you don't forsake your neighbour selling
@@ -101,7 +84,8 @@ export default {
                 <div class="flex gap-3 flex-col md:flex-row-reverse md:gap-5">
                     <div class="self-stretch">
                         <p class="text-xl text-start font-bold">Make savings on your purchases and payments</p>
-                        <p class="text-start">On the Xpenspay App, users can earn discounts on products and services
+                        <p class="text-start md:text-lg">On the Xpenspay App, users can earn discounts on products and
+                            services
                             from merchants on the platform. Discounts vary from merchant to merchant.
                         </p>
                     </div>
@@ -111,7 +95,8 @@ export default {
                 </div>
                 <div class="flex gap-6 flex-col">
                     <p class="text-xl text-center font-bold">Our Partners</p>
-                    <p class="text-start">Xpenspay is built in collaboration with Simplex Business Solutions and
+                    <p class="text-start md:text-lg">Xpenspay is built in collaboration with Simplex Business Solutions
+                        and
                         partnered with VFD Microfinance Bank in order to bring the best service to its customers with
                         top-tier customer support and reliable infrastructure to guarantee stable transactions 24/7.
                     </p>
@@ -185,30 +170,7 @@ export default {
                         </AccordionPanel>
                     </Accordion>
                 </div>
-                <div
-                    class="bg-[#EEEEEE] rounded-xl py-[60px] justify-between items-center text-start flex xl:gap-32 gap-16 px-[8px] md:px-[50px]">
-                    <div class="flex flex-1 flex-col gap-8 w-full">
-                        <p class="text-xl text-[#5A5A5A] font-bold">Become An Xpenspay Agent Today</p>
-                        <form action="https://formspree.io/f/xdkojked" class="flex flex-col gap-4 font-bold">
-                            <div class="flex gap-2 flex-col">
-                                <label for="fullName" class="">Full Name</label>
-                                <input type="text" class="p-3 rounded" name="fullName">
-                            </div>
-                            <div class="flex gap-2 flex-col">
-                                <label for="phoneNumber" class="">Phone Number</label>
-                                <input type="text" class="p-3 rounded" name="phoneNumber">
-                            </div>
-                            <div class="flex gap-2 flex-col">
-                                <label for="emailAddress" class="">Email Address</label>
-                                <input type="text" class="p-3 rounded" name="emailAddress">
-                            </div>
-                            <button class="md:w-max w-full px-10 py-2 bg-black font-bold text-white">Submit</button>
-                        </form>
-                    </div>
-                    <div class="md:flex-1 hidden md:block">
-                        <img src="../assets/illustrations/signupIllust.svg" alt="" class="">
-                    </div>
-                </div>
+                <agent-signup />
                 <div class="hidden">
                     <CCallout color="info">
                         New to or unfamiliar with flexbox? Read this CSS Tricks flexbox guide for
@@ -220,6 +182,6 @@ export default {
                 </div>
             </div>
         </main>
-        <site-footer class="p-4 " />
+        <site-footer/>
     </div>
 </template>

@@ -1,5 +1,6 @@
 <template>
-  <section class="flex flex-col items-center mt-14 w-full max-md:mt-10 text-left max-md:max-w-full">
+  <section
+    class="flex flex-col items-center mt-14 w-full lg:max-[1440px]:px-[40px] max-md:mt-10 text-left max-md:max-w-full">
     <div class="flex flex-wrap gap-10 justify-between items-center max-w-full w-[1392px]">
       <div class="flex flex-col self-stretch my-auto text-black lg:w-[450px]  max-md:max-w-full">
         <h2 class="text-5xl font-bold max-md:max-w-full max-md:text-3xl">Easily find merchants around you
