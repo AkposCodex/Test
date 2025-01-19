@@ -13,6 +13,12 @@ import "vue-toastification/dist/index.css";
 import './style.css'
 import App from './App.vue'
 
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faPhone } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+library.add(faPhone)
+
 const options = {
     // You can set your default options here
 };
@@ -30,4 +36,5 @@ createApp(App)
     .component('AccordionPanel', AccordionPanel)
     .component('AccordionHeader', AccordionHeader)
     .component('AccordionContent', AccordionContent)
+    .component('FontAwesomeIcon', FontAwesomeIcon)
     .mount('#app')

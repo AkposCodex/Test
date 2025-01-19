@@ -41,13 +41,13 @@
     </div>
   </section>
   <div
-    class="flex flex-col items-center px-8 py-5 w-full md:text-2xl font-medium text-white bg-cyan-500 max-md:px-5 max-md:max-w-full"
+    class="flex flex-col items-center px-5 py-5 w-full md:text-2xl font-medium text-white bg-cyan-500 max-md:px-8 max-md:max-w-full"
   >
-    <div class="flex flex-wrap gap-3 items-end ml-5 max-md:max-w-full">
+    <div class="flex flex-wrap gap-3 justify-center items-end ml-5 max-md:max-w-full">
       <p class="max-md:max-w-full">
         A Product of Direct Distribution Crafts Limited. Powered by
       </p>
-      <div class="flex items-center min-w-[240px]">
+      <div class="flex items-center justify-center min-w-[240px]">
         <img
           loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets/c49e2462ddbf40d0944f306255d5e3e6/57ebeb0401582b719bc27f3540e484cd3d01630da939e672432cb3e5b8a2df13?apiKey=c49e2462ddbf40d0944f306255d5e3e6&"
