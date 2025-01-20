@@ -7,7 +7,7 @@
       <p class="text-xl text-[#5A5A5A] font-bold">Become An Xpenspay Agent Today</p>
       <form action="https://formspree.io/f/xdkojked" method="POST" class="flex flex-col gap-4 font-bold">
         <div class="flex gap-2 flex-col">
-          <label for="fullName" class=""><span class="fa-solid fa-user"></span>Full Name</label>
+          <label for="fullName" class="">Full Name</label>
           <input type="text" class="p-3 rounded" name="fullName">
         </div>
         <div class="flex gap-2 flex-col">
