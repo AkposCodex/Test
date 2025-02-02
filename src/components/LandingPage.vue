@@ -1,11 +1,11 @@
 <template>
-  <div class="flex overflow-hidden flex-col bg-white w-screen">
+  <div class="flex overflow-hidden flex-col bg-white w-full">
     <nav-header />
     <main class="flex flex-col">
       <hero-section />
       <features-section />
       <download-section />
-      <agent-signup />
+      <!-- <agent-signup /> -->
     </main>
     <site-footer class="" />
   </div>

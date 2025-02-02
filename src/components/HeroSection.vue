@@ -13,7 +13,7 @@
           class="object-contain grow w-4/5 aspect-[0.87] max-md:mt-10 max-md:max-w-full"
         />
       </div>
-      <div class="flex flex-col ml-5 w-[38%] max-md:ml-0 max-md:w-full">
+      <div class="flex flex-col max-md:ml-0 max-md:w-full">
         <div
           class="flex flex-col items-start self-stretch my-auto text-center text-black max-md:mt-10 max-md:max-w-full"
         >

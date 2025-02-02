@@ -1,13 +1,13 @@
 <template>
   <footer
-    class="flex overflow-hidden flex-col self-stretch mt-28 w-full bg-neutral-100 lg:max-[1440px]:px-[40px] px-[16px] py-[30px] max-md:mt-10 max-md:max-w-full">
+    class="flex flex-col self-stretch mt-28 w-full bg-neutral-100 lg:max-[1440px]:px-[40px] px-[16px] py-[30px] max-md:mt-10 max-md:max-w-full">
     <div
       class="flex flex-wrap gap-10 lg:justify-between justify-center items-start self-center  w-full max-md:max-w-full">
       <nav class="flex flex-wrap gap-10 items-start grow text-black min-w-[240px]  max-md:max-w-full">
         <div class="flex flex-col items-start w-auto">
           <h3 class="font-bold">Your Account</h3>
           <RouterLink to="#support" class="mt-2" tabindex="0">Contact Support</RouterLink>
-          <RouterLink to="#agent-signup" class="mt-2" tabindex="1">Become an Agent</RouterLink>
+          <RouterLink to="/registration" class="mt-2" tabindex="1">Become an Agent</RouterLink>
           <RouterLink to="#help" class="mt-2" tabindex="2">Help</RouterLink>
         </div>
         <div class="flex flex-col items-start w-auto">
@@ -25,7 +25,7 @@
         </div>
       </nav>
       <div class="flex flex-col items-start justify-start min-w-[240px] w-[426px] lg:max-[1440px]:w-auto">
-        <p class="text-black text-xl">
+        <p class="text-black text-lg">
           Create an account and start getting the fastest speeds in Nigeria
         </p>
         <div class="flex gap-3.5 md:self-center mt-3.5 max-w-full">

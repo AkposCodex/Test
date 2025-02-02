@@ -22,15 +22,16 @@
 a {
   font-weight: 500;
   color: #000000;
-  text-decoration: inherit;
+  text-decoration: none;
 }
+
 a:hover {
   color: #3ff357;
 }
 
 body {
   margin: 0;
-  display: flex;
+  /* display: flex; */
   /* place-items: center; */
   min-width: 320px;
   min-height: 100vh;
@@ -66,15 +67,16 @@ button:focus-visible {
 }
 
 #app {
+  min-height: 100vh;
   margin: 0;
   text-align: center;
 }
 
 @media (prefers-color-scheme: light) {
-  :root {
+  /* :root {
     color: #213547;
     background-color: #ffffff;
-  }
+  } */
   a:hover {
     color: #747bff;
   }

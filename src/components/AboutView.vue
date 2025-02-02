@@ -24,7 +24,7 @@ export default {
 }
 </script>
 <template>
-    <div class="w-screen">
+    <div class="">
         <nav-header />
         <main class="flex flex-col items-center">
             <div class="w-full h-[200px] bg-cover bg-center "
@@ -33,64 +33,83 @@ export default {
                     <p class="text-[32px] font-bold text-white">About Xpenspay</p>
                 </div>
             </div>
-            <div class="px-[16px] lg:max-[1440px]:px-[40px] flex flex-col gap-10 my-10 " id="mainContent">
-                <div class="flex gap-3 flex-col md:flex-row md:gap-5">
-                    <div class="self-stretch">
-                        <p class="text-xl md:text-2xl text-start font-bold">Putting our users and merchants first</p>
-                        <p class="text-start md:text-lg">At Xpenspay we put our customers first in every feature we
-                            design and implement
-                            into our application to provide the greatest value possible with every transaction.
-                            <br> Our transaction fees are one of the lowest in the industry allowing for a larger range
-                            of
-                            transactions to be carried out by customers with merchants providing low volume transactions
-                            like car hire services and Mama Bole selling her quick eats on the street.
-                        </p>
+            <div class="px-[40px] lg:max-[1440px]:px-[80px] flex flex-col gap-10  " id="mainContent">
+                <div class="flex flex-col gap-24" id="features">
+                    <div class="flex gap-5 flex-col md:flex-row md:gap-5">
+                        <div class="self-stretch flex items-center">
+                            <div class="">
+                                <div class="mb-6">
+                                    <p class="text-xl md:text-2xl text-start font-bold">Putting our users and merchants
+                                        first</p>
+                                    <p class="text-start md:text-lg">At Xpenspay we put our users at the center of every
+                                        service to
+                                        provide the best value possible.
+                                    </p>
+                                </div>
+                                <div class="">
+                                    <p class="text-xl md:text-2xl text-start font-bold">What services do we provide?</p>
+                                    <ul class="list-disc text-start px-10">
+                                        <li>
+                                            <p>Lowest transaction rates in the industry</p>
+                                        </li>
+                                        <li>Special discounts on merchant services</li>
+                                        <li>Dedicated customer supports</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-3/5 h-max bg-cover bg-center rounded-2xl">
+                            <img src="../assets/img/userFemale.png" class="w-full " alt="">
+                        </div>
                     </div>
-                    <div class="w-full h-[235px] bg-cover bg-center rounded-2xl"
-                        style="background-image: url('https://images.unsplash.com/photo-1687422809654-579d81c29d32?q=80&w=1412&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+                    <div class="flex gap-5 w-full flex-col items-center md:flex-row-reverse md:gap-5">
+                        <div class="">
+                            <p class="text-xl md:text-2xl text-start font-bold">A fast and convenient way to pay</p>
+                            <p class="text-start md:text-lg">Make use of Xpenspay’s Scan-To-Pay feature to conveniently
+                                pay
+                                for goods and services without the hassle of account numbers differing banks slowing you
+                                down.
+                            </p>
+                        </div>
+                        <div class="w-3/5  h-max bg-cover bg-center rounded-2xl">
+                            <img src="../assets/img/qrScan.png" class="w-full " alt="">
+                        </div>
                     </div>
-                </div>
-                <div class="flex gap-3 flex-col md:flex-row-reverse md:gap-5">
-                    <div class="self-stretch">
-                        <p class="text-xl text-start font-bold">A fast and convenient way to pay</p>
-                        <p class="text-start md:text-lg">Xpenspay incorporates QR code technology as well as direct
-                            in-app
-                            transfers to provide flexibility and speed when carrying out transactions to provide one of
-                            the fastest transaction speeds in the industry
-                        </p>
+                    <div class="flex gap-5 flex-col items-center md:flex-row md:gap-20">
+                        <div class="">
+                            <p class="text-xl md:text-2xl text-start font-bold">An innovative community focused design</p>
+                            <p class="text-start md:text-lg">Xpenspay’s Merchant search function provides an enriching
+                                experience for users whenever they open the app.
+                            </p>
+                            <div class="mt-6">
+                                <p class="text-xl md:text-2xl text-start font-bold">Users enjoy various benefits like:
+                                </p>
+                                <ul class="list-disc text-start px-10">
+                                    <li>
+                                        Access to local vendors and service providers
+                                    </li>
+                                    <li>Save time on finding products near you</li>
+                                    <li>Help exploring new places wherever you go.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class=" bg-cover bg-center  rounded-2xl">
+                            <img src="../assets/img/findMerchant.png"
+                                alt="" class="h-max m-auto">
+                        </div>
                     </div>
-                    <div class="w-full md:max-w-[334px] h-[235px] bg-cover bg-center rounded-2xl"
-                        style="background-image: url('https://images.unsplash.com/photo-1652345408103-7fbe3dd59324?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA2fHxxciUyMGNvZGV8ZW58MHx8MHx8fDA%3D')">
-                    </div>
-                </div>
-                <div class="flex gap-3 flex-col md:flex-row md:gap-5">
-                    <div class="self-stretch">
-                        <p class="text-xl text-start font-bold">An innovative community focused design</p>
-                        <p class="text-start md:text-lg">With Xpenspay, our focus on the people who use our app leads.
-                            The app has
-                            a feature that allows users to discover vendors on the platform that operate in their area
-                            and give a quick overview of their businesses and what they offer. This fosters a sense of
-                            closeness within the community where you don't forsake your neighbour selling
-                            products/services close to you and saves you time in going far to find it. The map feature
-                            also allows our users to explore new areas for the best spots for food and goods/services as
-                            they go about their day.
-                        </p>
-                    </div>
-                    <div class="w-full  bg-cover bg-center h-[300px] rounded-2xl">
-                        <img src="https://cdn.builder.io/api/v1/image/assets/c49e2462ddbf40d0944f306255d5e3e6/e04dcbff994243f2fb8f37b5e9b54e0105dc1832d935c7158849e8fe76c1e82b?apiKey=c49e2462ddbf40d0944f306255d5e3e6&"
-                            alt="" class="h-full m-auto">
-                    </div>
-                </div>
-                <div class="flex gap-3 flex-col md:flex-row-reverse md:gap-5">
-                    <div class="self-stretch">
-                        <p class="text-xl text-start font-bold">Make savings on your purchases and payments</p>
-                        <p class="text-start md:text-lg">On the Xpenspay App, users can earn discounts on products and
-                            services
-                            from merchants on the platform. Discounts vary from merchant to merchant.
-                        </p>
-                    </div>
-                    <div class="w-full md:max-w-[334px] h-[235px] bg-cover bg-center rounded-2xl"
-                        style="background-image: url('https://images.unsplash.com/photo-1531303435785-3853ba035cda?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+                    <div class="flex gap-5 flex-col md:flex-row-reverse md:gap-5">
+                        <div class="self-stretch">
+                            <p class="text-xl text-start font-bold">Make savings on your purchases and payments</p>
+                            <p class="text-start md:text-lg">On the Xpenspay App, users can earn discounts on products
+                                and
+                                services
+                                from merchants on the platform. Discounts vary from merchant to merchant.
+                            </p>
+                        </div>
+                        <div class="w-full md:max-w-[334px] h-[235px] bg-cover bg-center rounded-2xl"
+                            style="background-image: url('https://images.unsplash.com/photo-1531303435785-3853ba035cda?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+                        </div>
                     </div>
                 </div>
                 <div class="flex gap-6 flex-col">
@@ -182,6 +201,6 @@ export default {
                 </div>
             </div>
         </main>
-        <site-footer/>
+        <site-footer />
     </div>
 </template>
