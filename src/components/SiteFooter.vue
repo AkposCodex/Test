@@ -24,7 +24,7 @@
           <RouterLink to="/about" class="mt-2" tabindex="2">FAQ</RouterLink>
         </div>
       </nav>
-      <div class="flex flex-col items-start justify-start min-w-[240px] w-[426px] lg:max-[1440px]:w-auto">
+      <div class="flex flex-col items-start justify-start max-md:items-center min-w-[240px] w-[426px] lg:max-[1440px]:w-auto">
         <p class="text-black text-lg">
           Create an account and start getting the fastest speeds in Nigeria
         </p>
@@ -40,7 +40,7 @@
       </div>
     </div>
     <div class="flex flex-col mt-16 max-w-full  text-md text-right text-black w-[958px] max-md:mt-10">
-      <nav class="flex flex-wrap gap-8 w-full justify-center md:justify-start max-md:max-w-full">
+      <nav class="flex flex-wrap gap-8 max-md:gap-3 w-full justify-center md:justify-start max-md:max-w-full">
         <span class="font-bold">© 2024 Xpenspay</span>
         <RouterLink to="#cookie-policy" tabindex="0">Cookie Policy</RouterLink>
         <RouterLink to="#terms" tabindex="1">Terms & Conditions</RouterLink>

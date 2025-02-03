@@ -25,7 +25,7 @@
           </p>
         </div>
       </div>
-      <div class="flex flex-col ml-5 w-[27%] max-md:ml-0 max-md:w-screen">
+      <div class="flex flex-col w-1/4 max-md:w-full ">
         <div
           class="flex flex-col self-stretch my-auto text-lg font-medium items-center text-center text-black max-md:mt-2"
         >

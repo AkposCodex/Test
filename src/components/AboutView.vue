@@ -33,9 +33,9 @@ export default {
                     <p class="text-[32px] font-bold text-white">About Xpenspay</p>
                 </div>
             </div>
-            <div class="px-[40px] lg:max-[1440px]:px-[80px] flex flex-col gap-10  " id="mainContent">
+            <div class="px-[16px] lg:max-[1440px]:px-[80px] mt-4 flex flex-col gap-10  " id="mainContent">
                 <div class="flex flex-col gap-24" id="features">
-                    <div class="flex gap-5 flex-col md:flex-row md:gap-5">
+                    <div class="flex gap-2 items-center flex-col md:flex-row md:gap-5">
                         <div class="self-stretch flex items-center">
                             <div class="">
                                 <div class="mb-6">
@@ -62,7 +62,7 @@ export default {
                             <img src="../assets/img/userFemale.png" class="w-full " alt="">
                         </div>
                     </div>
-                    <div class="flex gap-5 w-full flex-col items-center md:flex-row-reverse md:gap-5">
+                    <div class="flex gap-2 items-center w-full flex-col items-center md:flex-row-reverse md:gap-5">
                         <div class="">
                             <p class="text-xl md:text-2xl text-start font-bold">A fast and convenient way to pay</p>
                             <p class="text-start md:text-lg">Make use of Xpenspay’s Scan-To-Pay feature to conveniently
@@ -75,9 +75,10 @@ export default {
                             <img src="../assets/img/qrScan.png" class="w-full " alt="">
                         </div>
                     </div>
-                    <div class="flex gap-5 flex-col items-center md:flex-row md:gap-20">
+                    <div class="flex gap-2 items-center flex-col items-center md:flex-row md:gap-20">
                         <div class="">
-                            <p class="text-xl md:text-2xl text-start font-bold">An innovative community focused design</p>
+                            <p class="text-xl md:text-2xl text-start font-bold">An innovative community focused design
+                            </p>
                             <p class="text-start md:text-lg">Xpenspay’s Merchant search function provides an enriching
                                 experience for users whenever they open the app.
                             </p>
@@ -94,11 +95,10 @@ export default {
                             </div>
                         </div>
                         <div class=" bg-cover bg-center  rounded-2xl">
-                            <img src="../assets/img/findMerchant.png"
-                                alt="" class="h-max m-auto">
+                            <img src="../assets/img/findMerchant.png" alt="" class="h-max m-auto">
                         </div>
                     </div>
-                    <div class="flex gap-5 flex-col md:flex-row-reverse md:gap-5">
+                    <div class="flex gap-2 items-center flex-col md:flex-row-reverse md:gap-5">
                         <div class="self-stretch">
                             <p class="text-xl text-start font-bold">Make savings on your purchases and payments</p>
                             <p class="text-start md:text-lg">On the Xpenspay App, users can earn discounts on products
@@ -130,9 +130,9 @@ export default {
                 </div>
                 <div class="flex gap-6 flex-col">
                     <p class="text-xl text-center font-bold">Frequently Asked Questions</p>
-                    <Accordion class=" text-start">
+                    <Accordion class="text-start">
                         <AccordionPanel value="0" class="">
-                            <AccordionHeader class="text-start">How does Xpenspay work?</AccordionHeader>
+                            <AccordionHeader class="text-black ">How does Xpenspay work?</AccordionHeader>
                             <AccordionContent>
                                 <p class="m-0">
                                     The xpenspay app is designed to help you pay for daily expenses without worrying
@@ -145,7 +145,7 @@ export default {
                             </AccordionContent>
                         </AccordionPanel>
                         <AccordionPanel value="1">
-                            <AccordionHeader>How do I become an Agent of Xpenspay?</AccordionHeader>
+                            <AccordionHeader class="text-black ">How do I become an Agent of Xpenspay?</AccordionHeader>
                             <AccordionContent>
                                 <p class="m-0">
                                     Submit your details on the Xpenspay website to register as an Agent and you will be
@@ -155,7 +155,8 @@ export default {
                             </AccordionContent>
                         </AccordionPanel>
                         <AccordionPanel value="2">
-                            <AccordionHeader>What happens to my money in my account?</AccordionHeader>
+                            <AccordionHeader class="text-black ">What happens to my money in my account?
+                            </AccordionHeader>
                             <AccordionContent>
                                 <p class="m-0">
                                     Once you have funded your Xpenspay wallet, you can pay for items and services in any
@@ -167,7 +168,8 @@ export default {
                             </AccordionContent>
                         </AccordionPanel>
                         <AccordionPanel value="3">
-                            <AccordionHeader>How do I change my phone number on my account?</AccordionHeader>
+                            <AccordionHeader class="text-black ">How do I change my phone number on my account?
+                            </AccordionHeader>
                             <AccordionContent>
                                 <p class="m-0">
                                     Your phone number used at registration can not be changed after your account is
@@ -177,7 +179,7 @@ export default {
                             </AccordionContent>
                         </AccordionPanel>
                         <AccordionPanel value="4">
-                            <AccordionHeader>How do I fund my Xpenspay wallet?</AccordionHeader>
+                            <AccordionHeader class="text-black ">How do I fund my Xpenspay wallet?</AccordionHeader>
                             <AccordionContent>
                                 <p class="m-0">
                                     Your Xpenspay wallet has a linked account provided by VFD Microfinance Bank that can
@@ -189,7 +191,19 @@ export default {
                         </AccordionPanel>
                     </Accordion>
                 </div>
-                <agent-signup />
+                <!-- <agent-signup /> -->
+                <div class="flex w-full max-md:flex-col-reverse items-center">
+                    <div class="flex flex-col gap-2 w-max items-center">
+                        <p class="text-lg max-md:text-2xl font-bold">Become an Xpenspay Agent Today</p>
+                        <RouterLink to="/registration" class="w-3/5 bg-black text-white p-2 rounded hover:outline-none">
+                            Register Here
+                        </RouterLink>
+                    </div>
+                    <div class="w-1/5 h-full bg-cover bg-center rounded-2xl max-md:w-full">
+                        <img loading="lazy" src="../assets/img/userMale.png" alt="Mobile app referral rewards screen"
+                            class="object-contain grow w-full aspect-[1] max-md:w-full" />
+                    </div>
+                </div>
                 <div class="hidden">
                     <CCallout color="info">
                         New to or unfamiliar with flexbox? Read this CSS Tricks flexbox guide for
@@ -201,6 +215,8 @@ export default {
                 </div>
             </div>
         </main>
+        <br>
+        <br>
         <site-footer />
     </div>
 </template>

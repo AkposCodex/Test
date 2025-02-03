@@ -17,7 +17,7 @@ export default {
 </script>
 
 <template>
-  <nav class="flex w-full lg:max-[1440px]:px-[60px] mb-2 flex-col lg:items-center shadow-sm lg:flex-row">
+  <nav class="flex w-full lg:max-[1440px]:px-[60px] flex-col lg:items-center shadow-sm lg:flex-row">
     <nav class="w-full h-[60px] flex px-[16px] items-center justify-between">
       <RouterLink to="/" class="justify-center w-full lg:w-auto flex lg:flex-0">
         <img loading="lazy"
@@ -31,7 +31,7 @@ export default {
     <div class="flex gap-4 flex-col items-start text-black p-4" :class="{ 'hidden': !open, 'lg:block': open }">
       <RouterLink class=" text-black hover:font-bold" to="/">Home
       </RouterLink>
-      <RouterLink class=" text-black hover:font-bold" to="/about2">About</RouterLink>
+      <RouterLink class=" text-black hover:font-bold" to="/about">About</RouterLink>
       <RouterLink to="/registration" class=" text-black" tabindex="0">Become an agent</RouterLink>
     </div>
     <div class="lg:flex gap-4 items-start w-auto text-black hidden ">

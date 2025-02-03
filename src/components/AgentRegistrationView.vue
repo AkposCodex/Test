@@ -31,53 +31,55 @@ export default {
                             alt="Xpenspay logo" class="object-contain shrink-0 aspect-[4.1] w-[150px]" />
                     </RouterLink>
                 </nav>
-                <div class="w-full my-auto h-full py-[20px]">
-                    <p class="mb-10 md:mb-6 text-2xl font-bold italic">Become an Xpenspay Agent</p>
-                    <form action="https://formspree.io/f/xdkojked" method="POST"
-                        class="mx-auto w-[65%] flex flex-col gap-4 font-bold">
-                        <div class="flex items-start gap-1 flex-col">
-                            <label for="fullName" class="font-normal">Full Name <span class="text-red-600">*</span>
-                            </label>
-                            <input type="text"
-                                class="border-solid border-b w-full focus:border-[#12AFC4] focus:outline-none"
-                                name="fullName" required="true">
-                        </div>
-                        <div class="flex items-start gap-1 flex-col">
-                            <label for="phoneNumber" class="font-normal">Phone Number <span
-                                    class="text-red-600">*</span></label>
-                            <input type="text"
-                                class="border-solid w-full border-b focus:border-[#12AFC4] focus:outline-none"
-                                name="phoneNumber" required="true">
-                        </div>
-                        <div class="flex items-start gap-1 flex-col">
-                            <label for="emailAddress" class="font-normal">Email Address </label>
-                            <input type="text"
-                                class="border-solid w-full border-b focus:border-[#12AFC4] focus:outline-none"
-                                name="emailAddress">
-                        </div>
-                        <div class="flex items-start gap-1 flex-col">
-                            <label for="emailAddress" class="font-normal">Home Address <span
-                                    class="text-red-600">*</span></label>
-                            <input type="text"
-                                class="border-solid w-full border-b focus:border-[#12AFC4] focus:outline-none"
-                                name="homeAddress" required="true">
-                        </div>
-                        <div class="flex items-start gap-1 flex-col">
-                            <label for="emailAddress" class="font-normal">Local Government Area(LGA) <span
-                                    class="text-red-600">*</span></label>
-                            <input type="text"
-                                class="border-solid w-full border-b focus:border-[#12AFC4] focus:outline-none"
-                                name="lga" required="true">
-                        </div>
-                        <div class="flex items-start gap-1 flex-col">
-                            <label for="emailAddress" class="font-normal">State of Residence/Operation <span
-                                    class="text-red-600">*</span></label>
-                            <input type="text"
-                                class="border-solid w-full border-b focus:border-[#12AFC4] focus:outline-none"
-                                name="stateAddress" required="true">
-                        </div>
-                        <button class="md:w-max w-full mt-2 px-10 py-2 bg-black font-bold text-white">Sign Up</button>
-                    </form>
+                <div class="w-full flex items-center justify-center my-auto h-full py-[20px]">
+                    <div class="w-full">
+                        <p class="mb-10 md:mb-6 text-2xl font-bold italic">Become an Xpenspay Agent</p>
+                        <form action="https://formspree.io/f/xdkojked" method="POST"
+                            class="mx-auto w-3/5 max-md:w-4/5 flex flex-col gap-4 font-bold">
+                            <div class="flex items-start gap-1 flex-col">
+                                <label for="fullName" class="font-normal">Full Name <span class="text-red-600">*</span>
+                                </label>
+                                <input type="text"
+                                    class="border-solid border-b w-full focus:border-[#12AFC4] focus:outline-none"
+                                    name="fullName" required="true">
+                            </div>
+                            <div class="flex items-start gap-1 flex-col">
+                                <label for="phoneNumber" class="font-normal">Phone Number <span
+                                        class="text-red-600">*</span></label>
+                                <input type="text"
+                                    class="border-solid w-full border-b focus:border-[#12AFC4] focus:outline-none"
+                                    name="phoneNumber" required="true">
+                            </div>
+                            <div class="flex items-start gap-1 flex-col">
+                                <label for="emailAddress" class="font-normal">Email Address </label>
+                                <input type="text"
+                                    class="border-solid w-full border-b focus:border-[#12AFC4] focus:outline-none"
+                                    name="emailAddress">
+                            </div>
+                            <div class="flex items-start gap-1 flex-col">
+                                <label for="emailAddress" class="font-normal">Home Address <span
+                                        class="text-red-600">*</span></label>
+                                <input type="text"
+                                    class="border-solid w-full border-b focus:border-[#12AFC4] focus:outline-none"
+                                    name="homeAddress" required="true">
+                            </div>
+                            <div class="flex items-start gap-1 flex-col">
+                                <label for="emailAddress" class="font-normal">Local Government Area(LGA) <span
+                                        class="text-red-600">*</span></label>
+                                <input type="text"
+                                    class="border-solid w-full border-b focus:border-[#12AFC4] focus:outline-none"
+                                    name="lga" required="true">
+                            </div>
+                            <div class="flex items-start gap-1 flex-col">
+                                <label for="emailAddress" class="font-normal">State of Residence/Operation <span
+                                        class="text-red-600">*</span></label>
+                                <input type="text"
+                                    class="border-solid w-full border-b focus:border-[#12AFC4] focus:outline-none"
+                                    name="stateAddress" required="true">
+                            </div>
+                            <button class="md:w-max w-full mt-2 px-10 py-2 bg-black font-bold text-white">Sign Up</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
