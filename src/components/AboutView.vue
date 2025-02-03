@@ -183,8 +183,7 @@ export default {
                             <AccordionContent>
                                 <p class="m-0">
                                     Your Xpenspay wallet has a linked account provided by VFD Microfinance Bank that can
-                                    be funded using your
-                                    bank account of choice. Simply click on "Fund Wallet" in your Xpenspay app and copy
+                                    be funded using your bank account of choice. Simply click on "Fund Wallet" in your Xpenspay app and copy
                                     your account details provided.
                                 </p>
                             </AccordionContent>
