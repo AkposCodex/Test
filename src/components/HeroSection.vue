@@ -2,7 +2,7 @@
   <section
     class="self-endmt-20 w-full max-w-full max-md:mt-10 max-md:max-w-full px-4"
   >
-    <div class="flex gap-5 max-md:flex-col">
+    <div class="flex gap-5 justify-between max-md:flex-col">
       <div
         class="flex flex-col md:w-[32%] max-md:ml-0 max-md:w-screen items-center"
       >

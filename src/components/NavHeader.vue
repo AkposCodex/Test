@@ -17,8 +17,8 @@ export default {
 </script>
 
 <template>
-  <nav class="flex w-full lg:max-[1440px]:px-[60px] flex-col lg:items-center shadow-sm lg:flex-row">
-    <nav class="w-full h-[60px] flex px-[16px] items-center justify-between">
+  <nav class="flex w-full px-[60px] flex-col lg:items-center shadow-sm lg:flex-row">
+    <nav class="w-full  h-[60px] flex px-[16px] items-center justify-between">
       <RouterLink to="/" class="justify-center w-full lg:w-auto flex lg:flex-0">
         <img loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets/c49e2462ddbf40d0944f306255d5e3e6/6a21e9e92c25a36bb6144942c9b9e60e3351226a0fdb4687a4f2b830305470d8?apiKey=c49e2462ddbf40d0944f306255d5e3e6&"

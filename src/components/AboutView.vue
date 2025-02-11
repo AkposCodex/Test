@@ -34,9 +34,9 @@ export default {
                 </div>
             </div>
             <div class="px-[16px] lg:max-[1440px]:px-[80px] mt-4 flex flex-col gap-10  " id="mainContent">
-                <div class="flex flex-col gap-24" id="features">
-                    <div class="flex gap-2 items-center flex-col md:flex-row md:gap-5">
-                        <div class="self-stretch flex items-center">
+                <div class="flex flex-col justify-center gap-24" id="features">
+                    <div class="flex gap-10 items-center justify-center flex-col md:flex-row ">
+                        <div class="self-stretch  flex items-center">
                             <div class="">
                                 <div class="mb-6">
                                     <p class="text-xl md:text-2xl text-start font-bold">Putting our users and merchants
@@ -58,11 +58,11 @@ export default {
                                 </div>
                             </div>
                         </div>
-                        <div class="w-3/5 h-max bg-cover bg-center rounded-2xl">
+                        <div class="max-w-[1440px]:w-3/5 h-max bg-cover bg-center rounded-2xl">
                             <img src="../assets/img/userFemale.png" class="w-full " alt="">
                         </div>
                     </div>
-                    <div class="flex gap-2 items-center w-full flex-col items-center md:flex-row-reverse md:gap-5">
+                    <div class="flex gap-10 justify-center w-full flex-col items-center md:flex-row-reverse ">
                         <div class="">
                             <p class="text-xl md:text-2xl text-start font-bold">A fast and convenient way to pay</p>
                             <p class="text-start md:text-lg">Make use of Xpenspay’s Scan-To-Pay feature to conveniently
@@ -71,11 +71,11 @@ export default {
                                 down.
                             </p>
                         </div>
-                        <div class="w-3/5  h-max bg-cover bg-center rounded-2xl">
+                        <div class="max-w-[1440px]:w-3/5 h-max bg-cover bg-center rounded-2xl">
                             <img src="../assets/img/qrScan.png" class="w-full " alt="">
                         </div>
                     </div>
-                    <div class="flex gap-2 items-center flex-col items-center md:flex-row md:gap-20">
+                    <div class="flex gap-10 justify-center h-max flex-col items-center md:flex-row md:gap-20">
                         <div class="">
                             <p class="text-xl md:text-2xl text-start font-bold">An innovative community focused design
                             </p>
@@ -94,12 +94,12 @@ export default {
                                 </ul>
                             </div>
                         </div>
-                        <div class=" bg-cover bg-center  rounded-2xl">
-                            <img src="../assets/img/findMerchant.png" alt="" class="h-max m-auto">
+                        <div class="max-w-[1440px]:w-full w-2/5 h-max bg-cover bg-center rounded-2xl">
+                            <img src="../assets/img/findMerchant.png" alt="" class="self-stretch w-[30%]  h-max m-auto">
                         </div>
                     </div>
-                    <div class="flex gap-2 items-center flex-col md:flex-row-reverse md:gap-5">
-                        <div class="self-stretch">
+                    <div class="flex gap-10 items-center justify-center flex-col md:flex-row-reverse">
+                        <div class="">
                             <p class="text-xl text-start font-bold">Make savings on your purchases and payments</p>
                             <p class="text-start md:text-lg">On the Xpenspay App, users can earn discounts on products
                                 and
@@ -107,8 +107,8 @@ export default {
                                 from merchants on the platform. Discounts vary from merchant to merchant.
                             </p>
                         </div>
-                        <div class="w-full md:max-w-[334px] h-[235px] bg-cover bg-center rounded-2xl"
-                            style="background-image: url('https://images.unsplash.com/photo-1531303435785-3853ba035cda?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+                        <div class="max-w-[1440px]:w-3/5 h-max bg-cover bg-center rounded-2xl">
+                            <img src="../assets/img/customerService.png" class="w-full " alt="">
                         </div>
                     </div>
                 </div>
