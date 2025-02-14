@@ -3,7 +3,7 @@
     class="flex flex-col justify-center self-stretch px-16 mt-28 w-full bg-neutral-100 max-md:px-5 max-md:mt-10 max-md:max-w-full"
   >
     <div class="overflow-hidden w-full max-md:max-w-full">
-      <div class="flex gap-5 max-md:flex-col">
+      <div class="flex gap-5 justify-between max-md:flex-col">
         <div class="flex flex-col gap-6 w-3/5 max-md:ml-0 justify-center items-center max-md:w-full">
           <div
             class="flex flex-col self-stretch text-xl font-bold text-black max-md:mt-10 max-md:max-w-full max-md:text-4xl"
@@ -12,7 +12,7 @@
               Download the Xpenspay app and refer your friends to earn rewards
             </h2>
           </div>
-          <div class="flex gap-7 justify-between items-center w-4/5">
+          <div class="flex gap-7 justify-between items-center w-4/5 max-w-[600px]">
             <img
               loading="lazy"
               src="https://cdn.builder.io/api/v1/image/assets/c49e2462ddbf40d0944f306255d5e3e6/c2cea06a52e649eb0991f835f6feba1fa16ec0e68ea5dcb37dff27081108046f?apiKey=c49e2462ddbf40d0944f306255d5e3e6&"
@@ -29,7 +29,7 @@
             />
           </div>
         </div>
-        <div class="flex flex-col ml-5 w-2/5 max-md:ml-0 max-md:w-full">
+        <div class="flex flex-col ml-5 w-2/5 max-md:ml-0 max-md:w-full max-w-[20vw]">
           <img
             loading="lazy"
             src="../assets/img/userMale.png"
