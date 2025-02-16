@@ -33,7 +33,7 @@ export default {
                     <p class="text-[32px] font-bold text-white">About Xpenspay</p>
                 </div>
             </div>
-            <div class="px-[16px] lg:max-[1440px]:px-[80px] mt-4 flex flex-col gap-10  " id="mainContent">
+            <div class="px-[16px] lg:max-[1440px]:px-[80px] mt-4 flex flex-col gap-12" id="mainContent">
                 <div class="flex flex-col justify-center gap-24" id="features">
                     <div class="flex gap-10 items-center justify-center flex-col md:flex-row ">
                         <div class="self-stretch  flex items-center">
@@ -128,6 +128,19 @@ export default {
                             alt="Partner logo 2" class="object-contain aspect-[3.09] w-[170px]" />
                     </div>
                 </div>
+                <div class="flex gap-1 flex-col text-center">
+                    <p class="text-xl text-center font-bold">Our Vision</p>
+                    <p class="text-center italic text-lg md:text-2xl">To be Africa’s preferred daily expense wallet.
+                    </p>
+                </div>
+                <div class="flex gap-1 flex-col text-center">
+                    <p class="text-xl text-center font-bold">Our Mission</p>
+                    <p class="text-center italic text-lg md:text-2xl">To be Africa’s preferred
+                        neighborhood daily expense wallet,
+                        through delivery of the simplest, fastest
+                        and safest settlement medium.
+                    </p>
+                </div>
                 <div class="flex gap-6 flex-col">
                     <p class="text-xl text-center font-bold">Frequently Asked Questions</p>
                     <Accordion class="text-start">
@@ -183,7 +196,8 @@ export default {
                             <AccordionContent>
                                 <p class="m-0">
                                     Your Xpenspay wallet has a linked account provided by VFD Microfinance Bank that can
-                                    be funded using your bank account of choice. Simply click on "Fund Wallet" in your Xpenspay app and copy
+                                    be funded using your bank account of choice. Simply click on "Fund Wallet" in your
+                                    Xpenspay app and copy
                                     your account details provided.
                                 </p>
                             </AccordionContent>
