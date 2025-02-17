@@ -35,13 +35,38 @@ export default {
             </div>
             <div class="px-[16px] lg:max-[1440px]:px-[80px] mt-4 flex flex-col gap-12" id="mainContent">
                 <div class="flex flex-col justify-center gap-24" id="features">
+                    <div class="flex gap-10 justify-center w-full flex-col items-center md:flex-row-reverse ">
+                        <div class="">
+                            <p class="text-xl md:text-2xl text-start font-bold">A fast and convenient way to pay</p>
+                            <p class="text-start md:text-lg indent-8">Make use of Xpenspay’s Scan-To-Pay feature to
+                                conveniently
+                                pay
+                                for goods and services without the hassle of account numbers differing banks slowing you
+                                down.
+                            </p>
+                            <br>
+                            <p class="text-start md:text-lg indent-8">
+                                The Xpenspay app allows you pay for daily expenses without worrying
+                                about physical cash. With your phone camera scan the QR code at the merchant
+                                location, enter the product/service amount and enter your pin to pay. <span
+                                    class="font-bold">
+                                    Simply download
+                                    the Xpenspay App to start transactingtoday.
+                                </span>
+                            </p>
+                        </div>
+                        <div class="max-w-[1440px]:w-3/5 h-max bg-cover bg-center rounded-2xl">
+                            <img src="../assets/img/qrScan.png" class="w-full " alt="">
+                        </div>
+                    </div>
                     <div class="flex gap-10 items-center justify-center flex-col md:flex-row ">
                         <div class="self-stretch  flex items-center">
                             <div class="">
                                 <div class="mb-6">
                                     <p class="text-xl md:text-2xl text-start font-bold">Putting our users and merchants
                                         first</p>
-                                    <p class="text-start md:text-lg">At Xpenspay we put our users at the center of every
+                                    <p class="text-start md:text-lg indent-8">At Xpenspay we put our users at the center
+                                        of every
                                         service to
                                         provide the best value possible.
                                     </p>
@@ -62,24 +87,12 @@ export default {
                             <img src="../assets/img/userFemale.png" class="w-full " alt="">
                         </div>
                     </div>
-                    <div class="flex gap-10 justify-center w-full flex-col items-center md:flex-row-reverse ">
-                        <div class="">
-                            <p class="text-xl md:text-2xl text-start font-bold">A fast and convenient way to pay</p>
-                            <p class="text-start md:text-lg">Make use of Xpenspay’s Scan-To-Pay feature to conveniently
-                                pay
-                                for goods and services without the hassle of account numbers differing banks slowing you
-                                down.
-                            </p>
-                        </div>
-                        <div class="max-w-[1440px]:w-3/5 h-max bg-cover bg-center rounded-2xl">
-                            <img src="../assets/img/qrScan.png" class="w-full " alt="">
-                        </div>
-                    </div>
                     <div class="flex gap-10 justify-center h-max flex-col items-center md:flex-row md:gap-20">
                         <div class="">
                             <p class="text-xl md:text-2xl text-start font-bold">An innovative community focused design
                             </p>
-                            <p class="text-start md:text-lg">Xpenspay’s Merchant search function provides an enriching
+                            <p class="text-start md:text-lg indent-8">Xpenspay’s Merchant search function provides an
+                                enriching
                                 experience for users whenever they open the app.
                             </p>
                             <div class="mt-6">
@@ -101,7 +114,8 @@ export default {
                     <div class="flex gap-10 items-center justify-center flex-col md:flex-row-reverse">
                         <div class="">
                             <p class="text-xl text-start font-bold">Make savings on your purchases and payments</p>
-                            <p class="text-start md:text-lg">On the Xpenspay App, users can earn discounts on products
+                            <p class="text-start md:text-lg indent-8">On the Xpenspay App, users can earn discounts on
+                                products
                                 and
                                 services
                                 from merchants on the platform. Discounts vary from merchant to merchant.
@@ -128,18 +142,20 @@ export default {
                             alt="Partner logo 2" class="object-contain aspect-[3.09] w-[170px]" />
                     </div>
                 </div>
-                <div class="flex gap-1 flex-col text-center">
-                    <p class="text-xl text-center font-bold">Our Vision</p>
-                    <p class="text-center italic text-lg md:text-2xl">To be Africa’s preferred daily expense wallet.
-                    </p>
-                </div>
-                <div class="flex gap-1 flex-col text-center">
-                    <p class="text-xl text-center font-bold">Our Mission</p>
-                    <p class="text-center italic text-lg md:text-2xl">To be Africa’s preferred
-                        neighborhood daily expense wallet,
-                        through delivery of the simplest, fastest
-                        and safest settlement medium.
-                    </p>
+                <div class="my-12 flex flex-col gap-5">
+                    <div class="flex gap-1 flex-col text-center">
+                        <p class="text-3xl text-center font-bold">Our Vision</p>
+                        <p class="text-center italic text-lg md:text-2xl">To be Africa’s preferred daily expense wallet.
+                        </p>
+                    </div>
+                    <div class="flex gap-1 flex-col text-center">
+                        <p class="text-3xl text-center font-bold">Our Mission</p>
+                        <p class="text-center italic text-lg md:text-2xl">To be Africa’s preferred
+                            neighborhood daily expense wallet,
+                            through delivery of the simplest, fastest
+                            and safest settlement medium.
+                        </p>
+                    </div>
                 </div>
                 <div class="flex gap-6 flex-col">
                     <p class="text-xl text-center font-bold">Frequently Asked Questions</p>
@@ -148,7 +164,7 @@ export default {
                             <AccordionHeader class="text-black ">How does Xpenspay work?</AccordionHeader>
                             <AccordionContent>
                                 <p class="m-0">
-                                    The xpenspay app is designed to help you pay for daily expenses without worrying
+                                    The Xpenspay app allows you pay for daily expenses without worrying
                                     about physical cash. With your phone camera scan the QR code at the merchant
                                     location, enter the product/service amount and enter your pin to pay.
                                     <br>
