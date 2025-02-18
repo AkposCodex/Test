@@ -13,12 +13,12 @@
           class="object-contain grow w-4/5 aspect-[0.87] max-md:mt-10 max-md:max-w-full"
         />
       </div>
-      <div class="flex flex-col max-md:ml-0 max-md:w-full">
+      <div class="flex flex-col max-lg:pt-10 w-3/5 max-md:w-full">
         <div
           class="flex flex-col items-start self-stretch my-auto text-center text-black max-md:mt-10 max-md:max-w-full"
         >
-          <h1 class="text-5xl font-bold max-md:max-w-full max-lg:text-3xl">
-            Discover a new way to pay
+          <h1 class="text-3xl font-bold max-md:max-w-full max-lg:text-2xl">
+            Discover a new way to pay for your daily retail goods & services
           </h1>
           <p class="mt-6 text-xl font-medium max-md:max-w-full">
             Stop worrying about small change and start using Xpenspay today

@@ -51,7 +51,7 @@ export default {
                                 location, enter the product/service amount and enter your pin to pay. <span
                                     class="font-bold">
                                     Simply download
-                                    the Xpenspay App to start transactingtoday.
+                                    the Xpenspay App to start transacting today.
                                 </span>
                             </p>
                         </div>
