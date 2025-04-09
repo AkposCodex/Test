@@ -33,9 +33,9 @@
             src="https://cdn.builder.io/api/v1/image/assets/c49e2462ddbf40d0944f306255d5e3e6/fdd90d0ec841f5a45148c0f3014e3ee3dcaf912a04da03cb6702ad9efacfee8e?apiKey=c49e2462ddbf40d0944f306255d5e3e6&"
             alt="App Store download button"
             class="object-contain shrink-0 max-w-full rounded-lg aspect-[3.37] w-[165px]" />
-          <img loading="lazy"
+          <!-- <img loading="lazy"
             src="https://cdn.builder.io/api/v1/image/assets/c49e2462ddbf40d0944f306255d5e3e6/4b7e7d82aa0c845b9a0d4d5ed62f70b77ae8c0695f46051c2d35aa0f06019db9?apiKey=c49e2462ddbf40d0944f306255d5e3e6&"
-            alt="Google Play download button" class="object-contain shrink-0 max-w-full aspect-[2.98] w-[146px]" />
+            alt="Google Play download button" class="object-contain shrink-0 max-w-full aspect-[2.98] w-[146px]" /> -->
         </div>
       </div>
     </div>

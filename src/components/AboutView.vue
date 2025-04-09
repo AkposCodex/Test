@@ -107,7 +107,7 @@ export default {
                                 </ul>
                             </div>
                         </div>
-                        <div class="max-w-[1440px]:w-full w-2/5 h-max bg-cover bg-center rounded-2xl">
+                        <div class="max-w-[1440px]:w-full w-full md:w-2/5 h-max bg-cover bg-center rounded-2xl">
                             <img src="../assets/img/findMerchant.png" alt="" class="self-stretch w-[30%]  h-max m-auto">
                         </div>
                     </div>

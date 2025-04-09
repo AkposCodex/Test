@@ -16,7 +16,7 @@ export default {
 }
 </script>
 <template>
-    <div class="h-screen">
+    <div class="h-full py-8">
         <div class="flex w-full h-full">
             <div
                 class="w-2/5 hidden md:block h-full bg-blend-overlay bg-[#2DA771] bg-[url('https://images.unsplash.com/photo-1533135091724-62cc5402aa20?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]">
@@ -40,41 +40,41 @@ export default {
                                 <label for="fullName" class="font-normal">Full Name <span class="text-red-600">*</span>
                                 </label>
                                 <input type="text"
-                                    class="border-solid border-b w-full focus:border-[#12AFC4] focus:outline-none"
+                                    class="border-solid border-b w-full bg-white focus:border-[#12AFC4] focus:outline-none"
                                     name="fullName" required="true">
                             </div>
                             <div class="flex items-start gap-1 flex-col">
                                 <label for="phoneNumber" class="font-normal">Phone Number <span
                                         class="text-red-600">*</span></label>
                                 <input type="text"
-                                    class="border-solid w-full border-b focus:border-[#12AFC4] focus:outline-none"
+                                    class="border-solid w-full border-b bg-white focus:border-[#12AFC4] focus:outline-none"
                                     name="phoneNumber" required="true">
                             </div>
                             <div class="flex items-start gap-1 flex-col">
                                 <label for="emailAddress" class="font-normal">Email Address </label>
                                 <input type="text"
-                                    class="border-solid w-full border-b focus:border-[#12AFC4] focus:outline-none"
+                                    class="border-solid w-full border-b bg-white focus:border-[#12AFC4] focus:outline-none"
                                     name="emailAddress">
                             </div>
                             <div class="flex items-start gap-1 flex-col">
                                 <label for="emailAddress" class="font-normal">Home Address <span
                                         class="text-red-600">*</span></label>
                                 <input type="text"
-                                    class="border-solid w-full border-b focus:border-[#12AFC4] focus:outline-none"
+                                    class="border-solid w-full border-b bg-white focus:border-[#12AFC4] focus:outline-none"
                                     name="homeAddress" required="true">
                             </div>
                             <div class="flex items-start gap-1 flex-col">
                                 <label for="emailAddress" class="font-normal">Local Government Area(LGA) <span
                                         class="text-red-600">*</span></label>
                                 <input type="text"
-                                    class="border-solid w-full border-b focus:border-[#12AFC4] focus:outline-none"
+                                    class="border-solid w-full border-b bg-white focus:border-[#12AFC4] focus:outline-none"
                                     name="lga" required="true">
                             </div>
                             <div class="flex items-start gap-1 flex-col">
                                 <label for="emailAddress" class="font-normal">State of Residence/Operation <span
                                         class="text-red-600">*</span></label>
                                 <input type="text"
-                                    class="border-solid w-full border-b focus:border-[#12AFC4] focus:outline-none"
+                                    class="border-solid w-full border-b bg-white focus:border-[#12AFC4] focus:outline-none"
                                     name="stateAddress" required="true">
                             </div>
                             <button class="md:w-max w-full mt-2 px-10 py-2 bg-black font-bold text-white">Sign Up</button>
