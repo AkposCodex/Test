@@ -1,6 +1,5 @@
 <script>
 import SiteFooter from './SiteFooter.vue';
-import AgentSignup from './AgentSignup.vue';
 import NavHeader from './NavHeader.vue';
 import { ref } from 'vue';
 import { CAccordion } from '@coreui/vue'
@@ -13,7 +12,6 @@ export default {
     },
     components: {
         SiteFooter,
-        AgentSignup,
         NavHeader,
     },
     methods: {

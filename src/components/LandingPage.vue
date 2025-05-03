@@ -16,7 +16,6 @@ import NavHeader from './NavHeader.vue';
 import HeroSection from './HeroSection.vue';
 import FeaturesSection from './FeaturesSection.vue';
 import DownloadSection from './DownloadSection.vue';
-import AgentSignup from './AgentSignup.vue';
 import SiteFooter from './SiteFooter.vue';
 
 export default {
@@ -26,7 +25,6 @@ export default {
     HeroSection,
     FeaturesSection,
     DownloadSection,
-    AgentSignup,
     SiteFooter,
   },
 };
