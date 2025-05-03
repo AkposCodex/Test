@@ -5,7 +5,7 @@
     class="bg-[#EEEEEE] mt-20 py-[60px] justify-between items-center text-start flex xl:gap-32 gap-16 px-[40px] rounded-xl mx-auto">
     <div class="flex flex-1 flex-col gap-8 w-full">
       <p class="text-xl text-[#5A5A5A] font-bold">Become An Xpenspay Agent Today</p>
-      <form action="https://formspree.io/f/xdkojked" method="POST"
+      <form action="https://formspree.io/f/xdkojked" method="POST" onSubmit="fbq('track','Lead')"
         class="flex flex-col gap-4 font-bold">
         <div class="flex items-start gap-1 flex-col">
           <label for="fullName" class="font-normal">Full Name <span class="text-red-600">*</span>
