@@ -9,6 +9,8 @@ import AccordionPanel from 'primevue/accordionpanel';
 import AccordionHeader from 'primevue/accordionheader';
 import AccordionContent from 'primevue/accordioncontent';
 
+//Firebase
+import { app, analytics } from './firebase';
 import "vue-toastification/dist/index.css";
 import './style.css'
 import App from './App.vue'
@@ -38,3 +40,6 @@ createApp(App)
     .component('AccordionContent', AccordionContent)
     .component('FontAwesomeIcon', FontAwesomeIcon)
     .mount('#app')
+
+// console.log("Firebase app initialized:", app);
+// console.log("Google Analytics initialized:", analytics);

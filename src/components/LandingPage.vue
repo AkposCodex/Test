@@ -3,8 +3,8 @@
     <nav-header />
     <main class="flex flex-col">
       <hero-section />
-      <features-section />
       <download-section />
+      <features-section />
       <!-- <agent-signup /> -->
     </main>
     <site-footer class="" />
