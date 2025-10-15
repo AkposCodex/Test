@@ -17,7 +17,7 @@
     <div class="flex gap-3 max-md:flex-col-reverse max-md:justify-center justify-between items-center max-w-full w-[1392px]">
       <div class="flex overflow-hidden flex-col items-center self-stretch px-1 my-auto max-md:w-full min-w-[240px] w-min">
         <img loading="lazy"
-          src="https://cdn.builder.io/api/v1/image/assets/c49e2462ddbf40d0944f306255d5e3e6/3f72bf75f1f0f595e9da14548433a201679957db42753b1d7732372051008c75?apiKey=c49e2462ddbf40d0944f306255d5e3e6&"
+          src="../assets/img/phoneQR.png"
           alt="Quick payment feature illustration" class="object-contain max-md:w-3/5 aspect-[0.66]" />
       </div>
       <div class="flex flex-col self-stretch my-auto text-black min-w-[240px] max-md:max-w-full">

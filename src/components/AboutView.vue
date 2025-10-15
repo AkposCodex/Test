@@ -219,16 +219,18 @@ export default {
                     </Accordion>
                 </div>
                 <!-- <agent-signup /> -->
-                <div class="flex w-full max-md:flex-col-reverse items-center">
-                    <div class="flex flex-col gap-2 w-max items-center">
-                        <p class="text-lg max-md:text-2xl font-bold">Become an Xpenspay Agent Today</p>
-                        <RouterLink to="/registration" class="w-3/5 bg-black text-white p-2 rounded hover:outline-none">
-                            Register Here
-                        </RouterLink>
-                    </div>
-                    <div class="w-1/5 h-full bg-cover bg-center rounded-2xl max-md:w-full">
-                        <img loading="lazy" src="../assets/img/userMale.png" alt="Mobile app referral rewards screen"
-                            class="object-contain grow w-full aspect-[1] max-md:w-full" />
+                <div class="flex w-full max-md:flex-col-reverse items-center justify-center">
+                    <div class="flex w-min justify-center items-center">
+                        <div class="flex flex-col gap-2 w-max items-center">
+                            <p class="text-lg max-md:text-2xl font-bold">Become an Xpenspay Agent Today</p>
+                            <RouterLink to="/registration" class="w-3/5 bg-black text-white p-2 rounded hover:outline-none">
+                                Register Here
+                            </RouterLink>
+                        </div>
+                        <div class="w-1/5 h-full bg-cover bg-center rounded-2xl max-md:w-full">
+                            <img loading="lazy" src="../assets/img/userMale.png" alt="Mobile app referral rewards screen"
+                                class="object-contain grow w-full aspect-[1] max-md:w-full min-w-[200px]" />
+                        </div>
                     </div>
                 </div>
                 <div class="hidden">
