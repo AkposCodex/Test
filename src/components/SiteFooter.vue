@@ -6,7 +6,7 @@
       <nav class="flex flex-wrap gap-10 items-start grow text-black min-w-[240px]  max-md:max-w-full">
         <div class="flex flex-col items-start w-auto">
           <h3 class="font-bold">Your Account</h3>
-          <RouterLink to="#support" class="mt-2" tabindex="0">Contact Support</RouterLink>
+          <!-- <RouterLink to="#support" class="mt-2" tabindex="0">Contact Support</RouterLink> -->
           <RouterLink to="/registration" class="mt-2" tabindex="1">Become an Agent</RouterLink>
           <RouterLink to="#help" class="mt-2" tabindex="2">Help</RouterLink>
         </div>
@@ -17,6 +17,11 @@
           <RouterLink to="/about" class="mt-2" tabindex="2">Compliance</RouterLink>
           <RouterLink to="/about" class="mt-2" tabindex="3">Our Partners</RouterLink>
         </div>
+        <div class="">
+          <p class="">
+            For more information, please contact us at <i class="">+2347081360236</i> or <i class="">+2348037783608</i>
+          </p>
+        </div>
         <div class="flex flex-col items-start min-w-[240px] w-auto">
           <h3 class="font-bold">Safety Guidelines</h3>
           <RouterLink to="/about" class="mt-2" tabindex="0">Protecting your account</RouterLink>
@@ -24,7 +29,8 @@
           <RouterLink to="/about" class="mt-2" tabindex="2">FAQ</RouterLink>
         </div>
       </nav>
-      <div class="flex flex-col items-start justify-start max-md:items-center min-w-[240px] w-[426px] lg:max-[1440px]:w-auto">
+      <div
+        class="flex flex-col items-start justify-start max-md:items-center min-w-[240px] w-[426px] lg:max-[1440px]:w-auto">
         <p class="text-black text-lg">
           Create an account and start getting the fastest speeds in Nigeria
         </p>

@@ -35,7 +35,7 @@ export default {
                     <div class="w-full">
                         <p class="mb-10 md:mb-6 text-2xl font-bold italic">Become an Xpenspay Agent</p>
                         <form action="https://formspree.io/f/xdkojked" method="POST" onSubmit="fbq('track','Lead')"
-                            class="mx-auto w-3/5 max-md:w-4/5 flex flex-col gap-4 font-bold">
+                            class="mx-auto w-3/5 max-md:w-4/5 flex flex-col gap-4 font-bold" data-netlify="true">
                             <div class="flex items-start gap-1 flex-col">
                                 <label for="fullName" class="font-normal">Full Name <span class="text-red-600">*</span>
                                 </label>

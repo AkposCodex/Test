@@ -1,5 +1,10 @@
 <template>
   <section class="self-endmt-20 w-full max-w-full max-md:mt-10 max-md:max-w-full px-4">
+    <div class="px-6 py-2 md:hidden mb-10 bg-cyan-500 rounded-lg max-md:px-4 max-md:py-6">
+      <RouterLink to="/registration" class="">
+        <p class="text-white font-bold">Become an Agent</p>
+      </RouterLink>
+    </div>
     <div class="flex gap-5 justify-between max-md:flex-col">
       <div class="flex flex-col md:w-[32%] max-md:ml-0 max-md:w-screen items-center">
         <img loading="lazy"
@@ -21,9 +26,8 @@
       <div class="flex flex-col w-1/4 max-md:w-full ">
         <a href="https://play.google.com/store/apps/details?id=com.simplex.xpenspay"
           class="flex flex-col self-stretch my-auto text-lg font-medium items-center text-center text-black max-md:mt-2">
-          <img loading="lazy"
-            src="../assets/img/undefined.svg"
-            alt="QR code to download app" class="object-contain w-3/5 rounded-lg aspect-square" />
+          <img loading="lazy" src="../assets/img/undefined.svg" alt="QR code to download app"
+            class="object-contain w-3/5 rounded-lg aspect-square" />
           <p class="self-center my-2.5">Scan to download the app.</p>
         </a>
       </div>
