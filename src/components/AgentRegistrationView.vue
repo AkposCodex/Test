@@ -54,7 +54,7 @@ export default {
                                 <label for="emailAddress" class="font-normal">Email Address </label>
                                 <input type="text"
                                     class="border-solid w-full border-b bg-white focus:border-[#12AFC4] focus:outline-none"
-                                    name="emailAddress">
+                                    name="emailAddress" required="true">
                             </div>
                             <div class="flex items-start gap-1 flex-col">
                                 <label for="emailAddress" class="font-normal">Home Address <span
