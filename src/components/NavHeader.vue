@@ -1,6 +1,5 @@
 <script>
 import { ref } from 'vue';
-import { CAccordion } from '@coreui/vue'
 export default {
   setup() {
     const open = ref(false)
