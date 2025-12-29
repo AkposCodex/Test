@@ -29,7 +29,7 @@
           </p>
         </div>
       </nav>
-      <div class="flex flex-col items-center justify-start max-md:items-center min-w-[240px] lg:max-[1440px]:w-full">
+      <div class="flex flex-col items-center justify-start max-md:items-center min-w-[240px] w-full">
         <p class="text-black text-lg text-center">
           Create an account and start getting the fastest transaction speeds in Nigeria
         </p>
