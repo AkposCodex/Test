@@ -3,12 +3,12 @@
     class="flex flex-col self-stretch mt-28 w-full bg-neutral-100 lg:max-[1440px]:px-[40px] px-[16px] py-[30px] max-md:mt-10 max-md:max-w-full">
     <div
       class="flex flex-wrap gap-10 lg:justify-between justify-center items-start self-center  w-full max-md:max-w-full">
-      <nav class="flex flex-wrap gap-10 items-start grow text-black min-w-[240px]  max-md:max-w-full">
+      <nav class="flex flex-wrap gap-10 items-start justify-between grow text-black min-w-[240px]  max-md:max-w-full">
         <div class="flex flex-col items-start w-auto">
           <h3 class="font-bold">Your Account</h3>
           <!-- <RouterLink to="#support" class="mt-2" tabindex="0">Contact Support</RouterLink> -->
           <RouterLink to="/registration" class="mt-2" tabindex="1">Become an Agent</RouterLink>
-          <RouterLink to="#help" class="mt-2" tabindex="2">Help</RouterLink>
+          <RouterLink to="/about" class="mt-2" tabindex="2">Help</RouterLink>
         </div>
         <div class="flex flex-col items-start w-auto">
           <h3 class="font-bold">Xpenspay</h3>
@@ -17,22 +17,21 @@
           <RouterLink to="/about" class="mt-2" tabindex="2">Compliance</RouterLink>
           <RouterLink to="/about" class="mt-2" tabindex="3">Our Partners</RouterLink>
         </div>
-        <div class="">
-          <p class="">
-            For more information, please contact us at <i class="">+2347081360236</i> or <i class="">+2348037783608</i>
-          </p>
-        </div>
         <div class="flex flex-col items-start min-w-[240px] w-auto">
           <h3 class="font-bold">Safety Guidelines</h3>
           <RouterLink to="/about" class="mt-2" tabindex="0">Protecting your account</RouterLink>
           <RouterLink to="/about" class="mt-2" tabindex="1">What happens to my money?</RouterLink>
           <RouterLink to="/about" class="mt-2" tabindex="2">FAQ</RouterLink>
         </div>
+        <div class="">
+          <p class="">
+            For more information, please contact us at <i class="">+2347081360236</i> or <i class="">+2348037783608</i>
+          </p>
+        </div>
       </nav>
-      <div
-        class="flex flex-col items-start justify-start max-md:items-center min-w-[240px] w-[426px] lg:max-[1440px]:w-auto">
-        <p class="text-black text-lg">
-          Create an account and start getting the fastest speeds in Nigeria
+      <div class="flex flex-col items-center justify-start max-md:items-center min-w-[240px] lg:max-[1440px]:w-full">
+        <p class="text-black text-lg text-center">
+          Create an account and start getting the fastest transaction speeds in Nigeria
         </p>
         <div class="flex gap-3.5 md:self-center mt-3.5 max-w-full">
           <img loading="lazy"
@@ -48,10 +47,10 @@
     <div class="flex flex-col mt-16 max-w-full  text-md text-right text-black w-[958px] max-md:mt-10">
       <nav class="flex flex-wrap gap-8 max-md:gap-3 w-full justify-center md:justify-start max-md:max-w-full">
         <span class="font-bold">© 2024 Xpenspay</span>
-        <RouterLink to="#cookie-policy" tabindex="0">Cookie Policy</RouterLink>
-        <RouterLink to="#terms" tabindex="1">Terms & Conditions</RouterLink>
-        <RouterLink to="#privacy" tabindex="2">Privacy Policy</RouterLink>
-        <RouterLink to="#privacy" tabindex="3">Cookie Settings</RouterLink>
+        <RouterLink to="/privacy-policy" tabindex="0">Cookie Policy</RouterLink>
+        <RouterLink to="/privacy-policy" tabindex="1">Terms & Conditions</RouterLink>
+        <RouterLink to="/privacy-policy" tabindex="2">Privacy Policy</RouterLink>
+        <RouterLink to="/privacy-policy" tabindex="3">Cookie Settings</RouterLink>
       </nav>
       <img loading="lazy"
         src="https://cdn.builder.io/api/v1/image/assets/c49e2462ddbf40d0944f306255d5e3e6/0affe808b6f7862ba411c28976a3e9ca595e55f5b86932fd1d32bdda5d2df5c4?apiKey=c49e2462ddbf40d0944f306255d5e3e6&"

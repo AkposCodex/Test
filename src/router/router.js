@@ -2,11 +2,13 @@ import { createWebHistory, createRouter } from 'vue-router'
 import HomeView from '../components/LandingPage.vue'
 import AboutPage from '../components/AboutView.vue'
 import AgentRegistrationView from '../components/AgentRegistrationView.vue'
+import PrivacyPolicyView from '../components/PrivacyPolicy.vue'
 
 const routes = [
   { path: '/', component: HomeView, name: 'home', },
   { path: '/about', component: AboutPage, name: 'about', meta: { title: 'Xpenspay | About Us' } },
   { path: '/registration', component: AgentRegistrationView, name: 'registration', meta: { title: 'Xpenspay | Become An Agent' } },
+  { path: '/privacy-policy', component: PrivacyPolicyView, name: 'privacy-policy', meta: { title: 'Xpenspay | Privacy Policy' } },
 ]
 
 const router = createRouter({
