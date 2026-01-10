@@ -24,7 +24,7 @@
         </div>
       </div>
       <div class="flex flex-col w-1/4 max-md:w-full ">
-        <a href="https://play.google.com/store/apps/details?id=com.simplex.xpenspay"
+        <a href="https://play.google.com/store/apps/details?id=com.simplexsolutions.xpenspay"
           class="flex flex-col self-stretch my-auto text-lg font-medium items-center text-center text-black max-md:mt-2">
           <img loading="lazy" src="../assets/img/undefined.svg" alt="QR code to download app"
             class="object-contain w-3/5 rounded-lg aspect-square" />

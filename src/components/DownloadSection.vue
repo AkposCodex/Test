@@ -17,7 +17,7 @@
               class="object-contain shrink-0 self-stretch my-auto aspect-[2.97] lg:w-[196px] w-[120px]"
               tabindex="0"
             /> -->
-            <a href="https://play.google.com/store/apps/details?id=com.simplex.xpenspay" target="_blank" rel="noopener"
+            <a href="https://play.google.com/store/apps/details?id=com.simplexsolutions.xpenspay" target="_blank" rel="noopener"
               class=" text-black" tabindex="0" @click="handleDownloadButtonClick">
               <img loading="lazy"
                 src="https://cdn.builder.io/api/v1/image/assets/c49e2462ddbf40d0944f306255d5e3e6/7ee117be5388e0be1340ab3dbd476775899d64cefc677d7618fe181f73978d35?apiKey=c49e2462ddbf40d0944f306255d5e3e6&"
