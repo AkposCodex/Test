@@ -28,7 +28,7 @@
           class="flex flex-col self-stretch my-auto text-lg font-medium items-center text-center text-black max-md:mt-2">
           <img loading="lazy" src="../assets/img/newQR.svg" alt="QR code to download app"
             class="object-contain w-3/5 rounded-lg aspect-square" />
-          <p class="self-center my-2.5">Scan to download the app.</p>
+          <p class="self-center my-2.5">Scan or tap to download the app.</p>
         </a>
       </div>
     </div>
