@@ -27,6 +27,7 @@
           <p class="">
             For more information, please contact us at <i class="">+2347081360236</i> or <i class="">+2348037783608</i>
           </p>
+          <p class="">Head Office: No. 4, Macarthy Street, IIupeju Estate.Lagos. Lagos State</p>
         </div>
       </nav>
       <div class="flex flex-col items-center justify-start max-md:items-center min-w-[240px] w-full">
