@@ -1,90 +1,98 @@
 <script>
 import SiteFooter from './SiteFooter.vue';
 import NavHeader from './NavHeader.vue';
-import { RouterLink, useRouter } from 'vue-router';
-import { ref, reactive } from 'vue';
+import { RouterLink } from 'vue-router';
 
+// Keep this outside as a constant
 const SCRIPT_URL = import.meta.env.VITE_APPS_SCRIPT_URL;
 
-// const isSubmitting = ref(false);
-
-//Form Data
-const form = reactive({
-    fullName: '',
-    phone: '',
-    email: '',
-    homeAddress: '',
-    lga: '',
-    state: '',
-    bankName: '',
-    accountNumber: '',
-    bvn: '',
-    nin: '',
-    photo: null // This will store the Base64 string
-});
-
-//File Upload Handler
-const handleFileUpload = (event) => {
-    const file = event.target.files[0];
-    const reader = new FileReader();
-    reader.onload = (e) => {
-        form.photo = e.target.result;
-    };
-    reader.readAsDataURL(file);
-};
-
-const pushRoute = () => {
-    const router = useRouter();
-    console.log(router);
-};
-
-//Form Submission Handler
-// const 
 export default {
-    setup() {
-        return {
-        };
-    },
-    data() {
-        return {
-            form,
-            isSubmitting: false,
-        };
-    },
     components: {
         SiteFooter,
         NavHeader,
     },
+    data() {
+        return {
+            isSubmitting: false,
+            // Define the form object directly here
+            form: {
+                fullName: '',
+                phone: '',
+                email: '',
+                homeAddress: '',
+                lga: '',
+                state: '',
+                bankName: '',
+                accountNumber: '',
+                bvn: '',
+                nin: '',
+                photo: null
+            }
+        };
+    },
     methods: {
-        handleFileUpload,
-        pushRoute,
+        handleFileUpload(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            const reader = new FileReader();
+            reader.readAsDataURL(file);
+            reader.onload = (e) => {
+                const img = new Image();
+                img.src = e.target.result;
+                img.onload = () => {
+                    // 1. Create a canvas
+                    const canvas = document.createElement('canvas');
+                    const MAX_WIDTH = 800; // Standard passport view size
+                    let width = img.width;
+                    let height = img.height;
+
+                    // 2. Maintain Aspect Ratio
+                    if (width > MAX_WIDTH) {
+                        height *= MAX_WIDTH / width;
+                        width = MAX_WIDTH;
+                    }
+
+                    canvas.width = width;
+                    canvas.height = height;
+
+                    // 3. Draw image to canvas
+                    const ctx = canvas.getContext('2d');
+                    ctx.drawImage(img, 0, 0, width, height);
+
+                    // 4. Compress to JPEG at 0.7 quality
+                    const compressedBase64 = canvas.toDataURL('image/jpeg', 0.7);
+
+                    // 5. Save to your form object
+                    this.form.photo = compressedBase64;
+                };
+            };
+        },
         async handleSubmit() {
-            if (!form.photo) return alert("Please upload a passport photo");
+            if (!this.form.photo) return alert("Please upload a passport photo");
 
             this.isSubmitting = true;
 
             try {
-                const response = await fetch(SCRIPT_URL, {
+                // Stringify the data from 'this.form'
+                await fetch(SCRIPT_URL, {
                     method: 'POST',
-                    mode: 'no-cors', // Apps Script requires no-cors for simple redirect handling
+                    mode: 'no-cors',
                     headers: {
                         'Content-Type': 'application/json',
                     },
-                    body: JSON.stringify(form)
+                    body: JSON.stringify(this.form)
                 });
+
                 alert("Application submitted successfully!");
                 this.$router.push('/thank-you');
-                // Reset form logic here
             } catch (error) {
                 console.error("Error!", error);
                 alert("Submission failed. Please try again.");
             } finally {
                 this.isSubmitting = false;
             }
-        },
-        goBack() {
-            this.$router.push('/thank-you');
-        },
+        }
     }
 }
 </script>
@@ -112,55 +120,56 @@ export default {
                             <input type="hidden" name="form-name" value="registrationForm" />
                             <div class="flex items-start gap-1 flex-col">
                                 <!-- Full Name -->
-                                <label for="fullName" class="font-normal">Full Name(First Middle Last) <span
+                                <label for="fullName" class="font-lg">Full Name(First Middle Last) <span
                                         class="text-red-600">*</span>
                                 </label>
                                 <input type="text" v-model="form.fullName"
                                     class="border-solid border-b w-full bg-white focus:border-[#12AFC4] focus:outline-none"
-                                    name="fullName" required="true">
+                                    name="fullName" required="true" placeholder="John Rover">
                             </div>
                             <div class="flex items-start gap-1 flex-col">
                                 <!-- Phone Number -->
-                                <label for="phoneNumber" class="font-normal">Phone Number <span
+                                <label for="phoneNumber" class="font-lg">Phone Number <span
                                         class="text-red-600">*</span></label>
-                                <input type="text" v-model="form.phone"
+                                <input type="text" v-model="form.phone" placeholder="080..."
                                     class="border-solid w-full border-b bg-white focus:border-[#12AFC4] focus:outline-none"
-                                    name="phoneNumber" maxlength="11" required="true">
+                                    name="phoneNumber" maxlength="11" required="true"
+                                    @input="form.phone = form.phone.replace(/[^0-9]/g, '')">
                             </div>
                             <div class="flex items-start gap-1 flex-col">
                                 <!-- Email Address -->
-                                <label for="emailAddress" class="font-normal">Email Address </label>
+                                <label for="emailAddress" class="font-lg">Email Address </label>
                                 <input type="email" v-model="form.email"
                                     class="border-solid w-full border-b bg-white focus:border-[#12AFC4] focus:outline-none"
-                                    name="emailAddress" required="true">
+                                    name="emailAddress" required="true" placeholder="info@xpenspay.com">
                             </div>
                             <div class="flex items-start gap-1 flex-col">
                                 <!-- Home Address -->
-                                <label for="homeAddress" class="font-normal">Home Address <span
+                                <label for="homeAddress" class="font-lg">Home Address <span
                                         class="text-red-600">*</span></label>
                                 <input type="text" v-model="form.homeAddress"
                                     class="border-solid w-full border-b bg-white focus:border-[#12AFC4] focus:outline-none"
-                                    name="homeAddress" required="true">
+                                    name="homeAddress" required="true" placeholder="Home address">
                             </div>
                             <div class="flex items-start gap-1 flex-col">
                                 <!-- Local Government Area -->
-                                <label for="lga" class="font-normal">Local Government Area(LGA) <span
+                                <label for="lga" class="font-lg">Local Government Area(LGA) <span
                                         class="text-red-600">*</span></label>
                                 <input type="text" v-model="form.lga"
                                     class="border-solid w-full border-b bg-white focus:border-[#12AFC4] focus:outline-none"
-                                    name="lga" required="true">
+                                    name="lga" required="true" placeholder="Alimosho">
                             </div>
                             <div class="flex items-start gap-1 flex-col">
                                 <!-- State of Residence/Operation -->
-                                <label for="stateAddress" class="font-normal">State of Residence/Operation <span
+                                <label for="stateAddress" class="font-lg">State of Residence/Operation <span
                                         class="text-red-600">*</span></label>
                                 <input type="text" v-model="form.state"
                                     class="border-solid w-full border-b bg-white focus:border-[#12AFC4] focus:outline-none"
-                                    name="stateAddress" required="true">
+                                    name="stateAddress" required="true" placeholder="Lagos">
                             </div>
                             <div class="flex items-start gap-1 flex-col">
                                 <!-- Passport Photo -->
-                                <label for="passportPhoto" class="font-normal">Passport Photo<span
+                                <label for="passportPhoto" class="font-lg">Passport Photo<span
                                         class="text-red-600">*</span></label>
                                 <input type="file" @change="handleFileUpload" accept="image/*"
                                     class="border-solid w-full border-b bg-white focus:border-[#12AFC4] focus:outline-none"
@@ -174,37 +183,39 @@ export default {
                             </div>
                             <div class="flex items-start gap-1 flex-col">
                                 <!-- Bank-->
-                                <label for="bank" class="font-normal">Bank(Ex. GTBank, Zenith Bank, Diamond Bank,
+                                <label for="bank" class="font-lg">Bank(Ex. GTBank, Zenith Bank, Diamond Bank,
                                     etc)<span class="text-red-600">*</span></label>
                                 <input type="text" v-model="form.bankName"
                                     class="border-solid w-full border-b bg-white focus:border-[#12AFC4] focus:outline-none"
-                                    name="bank" required="true">
+                                    name="bank" required="true" placeholder="VFD Micro...">
                             </div>
                             <div class="flex items-start gap-1 flex-col">
                                 <!-- Bank Account Number -->
-                                <label for="bankAccountNumber" class="font-normal">Bank Account Number<span
+                                <label for="bankAccountNumber" class="font-lg">Bank Account Number<span
                                         class="text-red-600">*</span></label>
-                                <input type="text" v-model="form.accountNumber"
+                                <input type="text" v-model="form.accountNumber" placeholder="2200330300..."
                                     class="border-solid w-full border-b bg-white focus:border-[#12AFC4] focus:outline-none"
-                                    name="bankAccountNumber" required="true">
+                                    name="bankAccountNumber" required="true"
+                                    @input="form.accountNumber = form.accountNumber.replace(/[^0-9]/g, '')">
                             </div>
                             <div class="flex items-start gap-1 flex-col">
                                 <!-- BVN -->
-                                <label for="bvn" class="font-normal">Bank Verification Number (BVN)(Your BVN is required
+                                <label for="bvn" class="font-lg">Bank Verification Number (BVN)(Your BVN is required
                                     strictly for identity verification as per financial regulations and will be handled
                                     securely.)<span class="text-red-600">*</span></label>
-                                <input type="text" v-model="form.bvn"
+                                <input type="text" v-model="form.bvn" placeholder="00000000000"
                                     class="border-solid w-full border-b bg-white focus:border-[#12AFC4] focus:outline-none"
-                                    name="bvn" required="true">
+                                    name="bvn" required="true" maxlength="11"
+                                    @input="form.bvn = form.bvn.replace(/[^0-9]/g, '')">
                             </div>
                             <div class="flex items-start gap-1 flex-col">
                                 <!-- NIN -->
-                                <label for="nin" class="font-normal">National Identity Number (NIN)(Your NIN is required
+                                <label for="nin" class="font-lg">National Identity Number (NIN)(Your NIN is required
                                     strictly for identity verification as per financial regulations and will be handled
                                     securely.)<span class="text-red-600">*</span></label>
-                                <input type="text" v-model="form.nin"
+                                <input type="text" v-model="form.nin" placeholder="00000000000"
                                     class="border-solid w-full border-b bg-white focus:border-[#12AFC4] focus:outline-none"
-                                    name="nin" required="true">
+                                    name="nin" required="true" @input="form.nin = form.nin.replace(/[^0-9]/g, '')">
                             </div>
                             <button class="md:w-max w-full mt-2 px-10 py-2 bg-black font-bold text-white"
                                 type="submit">{{ isSubmitting ? 'Processing...' : 'Sign Up' }}</button>
@@ -215,3 +226,10 @@ export default {
         </div>
     </div>
 </template>
+
+<style scoped>
+input::placeholder {
+    font-size: 16px;
+    opacity: 0.55;
+}
+</style>
