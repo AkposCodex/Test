@@ -6,8 +6,7 @@ import { ref, reactive } from 'vue';
 
 const SCRIPT_URL = import.meta.env.VITE_APPS_SCRIPT_URL;
 
-const isSubmitting = ref(false);
-const router = useRouter();
+// const isSubmitting = ref(false);
 
 //Form Data
 const form = reactive({
@@ -34,37 +33,22 @@ const handleFileUpload = (event) => {
     reader.readAsDataURL(file);
 };
 
-//Form Submission Handler
-const handleSubmit = async () => {
-    if (!form.photo) return alert("Please upload a passport photo");
-    console.log("submitting");
-
-    isSubmitting.ref = true;
-
-    try {
-        const response = await fetch(SCRIPT_URL, {
-            method: 'POST',
-            mode: 'no-cors', // Apps Script requires no-cors for simple redirect handling
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(form)
-        });
-
-        alert("Application submitted successfully!");
-        router.push('/thank-you');
-        // Reset form logic here
-    } catch (error) {
-        console.error("Error!", error);
-        alert("Submission failed. Please try again.");
-    } finally {
-        isSubmitting.value = false;
-    }
+const pushRoute = () => {
+    const router = useRouter();
+    console.log(router);
 };
+
+//Form Submission Handler
+// const 
 export default {
     setup() {
         return {
+        };
+    },
+    data() {
+        return {
             form,
+            isSubmitting: false,
         };
     },
     components: {
@@ -72,9 +56,35 @@ export default {
         NavHeader,
     },
     methods: {
-        handleSubmit,
         handleFileUpload,
-        isSubmitting,
+        pushRoute,
+        async handleSubmit() {
+            if (!form.photo) return alert("Please upload a passport photo");
+
+            this.isSubmitting = true;
+
+            try {
+                const response = await fetch(SCRIPT_URL, {
+                    method: 'POST',
+                    mode: 'no-cors', // Apps Script requires no-cors for simple redirect handling
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(form)
+                });
+                alert("Application submitted successfully!");
+                this.$router.push('/thank-you');
+                // Reset form logic here
+            } catch (error) {
+                console.error("Error!", error);
+                alert("Submission failed. Please try again.");
+            } finally {
+                this.isSubmitting = false;
+            }
+        },
+        goBack() {
+            this.$router.push('/thank-you');
+        },
     }
 }
 </script>
@@ -113,14 +123,14 @@ export default {
                                 <!-- Phone Number -->
                                 <label for="phoneNumber" class="font-normal">Phone Number <span
                                         class="text-red-600">*</span></label>
-                                <input type="text" v-model="form.phoneNumber"
+                                <input type="text" v-model="form.phone"
                                     class="border-solid w-full border-b bg-white focus:border-[#12AFC4] focus:outline-none"
                                     name="phoneNumber" maxlength="11" required="true">
                             </div>
                             <div class="flex items-start gap-1 flex-col">
                                 <!-- Email Address -->
                                 <label for="emailAddress" class="font-normal">Email Address </label>
-                                <input type="email" v-model="form.emailAddress"
+                                <input type="email" v-model="form.email"
                                     class="border-solid w-full border-b bg-white focus:border-[#12AFC4] focus:outline-none"
                                     name="emailAddress" required="true">
                             </div>
@@ -144,7 +154,7 @@ export default {
                                 <!-- State of Residence/Operation -->
                                 <label for="stateAddress" class="font-normal">State of Residence/Operation <span
                                         class="text-red-600">*</span></label>
-                                <input type="text" v-model="form.stateAddress"
+                                <input type="text" v-model="form.state"
                                     class="border-solid w-full border-b bg-white focus:border-[#12AFC4] focus:outline-none"
                                     name="stateAddress" required="true">
                             </div>
@@ -166,7 +176,7 @@ export default {
                                 <!-- Bank-->
                                 <label for="bank" class="font-normal">Bank(Ex. GTBank, Zenith Bank, Diamond Bank,
                                     etc)<span class="text-red-600">*</span></label>
-                                <input type="text" v-model="form.bank"
+                                <input type="text" v-model="form.bankName"
                                     class="border-solid w-full border-b bg-white focus:border-[#12AFC4] focus:outline-none"
                                     name="bank" required="true">
                             </div>
@@ -174,7 +184,7 @@ export default {
                                 <!-- Bank Account Number -->
                                 <label for="bankAccountNumber" class="font-normal">Bank Account Number<span
                                         class="text-red-600">*</span></label>
-                                <input type="text" v-model="form.bankAccountNumber"
+                                <input type="text" v-model="form.accountNumber"
                                     class="border-solid w-full border-b bg-white focus:border-[#12AFC4] focus:outline-none"
                                     name="bankAccountNumber" required="true">
                             </div>
